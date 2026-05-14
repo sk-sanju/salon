@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
 
                 // Construct WhatsApp Message
-                const shopPhone = "919539251789";
+                const shopPhone = "919995544316";
                 const message = `*New Appointment Request* 📅%0A%0A*Name:* ${nameVal}%0A*Phone:* ${phoneVal}%0A*Service:* ${service}%0A*Date:* ${formattedDate}%0A*Time:* ${time}%0A%0APlease confirm my booking.`;
                 
                 const whatsappUrl = `https://wa.me/${shopPhone}?text=${message}`;
