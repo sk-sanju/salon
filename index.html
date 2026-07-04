@@ -1,682 +1,733 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="LUXE ivy Salon Guruvayoor - Premium Beauty Parlour services including hair styling, keratin, facials, bridal makeup, and more.">
-    <title>LUXE ivy Salon Guruvayoor | Elevate Your Beauty</title>
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SmileCare Dental Hospital | Premium Modern Dentistry</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary": "#ffffff",
+                        "outline-variant": "#c3c6d7",
+                        "on-surface": "#0b1c30",
+                        "primary-container": "#2563eb",
+                        "secondary-container": "#5dfd8a",
+                        "background": "#f8f9ff",
+                        "on-secondary-fixed-variant": "#005322",
+                        "on-error": "#ffffff",
+                        "primary-fixed-dim": "#b4c5ff",
+                        "on-primary": "#ffffff",
+                        "surface-container-highest": "#d3e4fe",
+                        "surface-container-high": "#dce9ff",
+                        "outline": "#737686",
+                        "on-primary-fixed-variant": "#003ea8",
+                        "inverse-surface": "#213145",
+                        "surface-container-lowest": "#ffffff",
+                        "error": "#ba1a1a",
+                        "on-tertiary-fixed-variant": "#454748",
+                        "on-tertiary-fixed": "#191c1d",
+                        "inverse-on-surface": "#eaf1ff",
+                        "error-container": "#ffdad6",
+                        "tertiary": "#525556",
+                        "tertiary-fixed-dim": "#c5c7c8",
+                        "on-secondary-container": "#007232",
+                        "on-primary-container": "#eeefff",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#66ff8e",
+                        "secondary": "#006d2f",
+                        "primary": "#004ac6",
+                        "surface": "#f8f9ff",
+                        "surface-container-low": "#eff4ff",
+                        "surface-dim": "#cbdbf5",
+                        "on-surface-variant": "#434655",
+                        "surface-bright": "#f8f9ff",
+                        "primary-fixed": "#dbe1ff",
+                        "inverse-primary": "#b4c5ff",
+                        "tertiary-container": "#6b6d6e",
+                        "on-background": "#0b1c30",
+                        "surface-variant": "#d3e4fe",
+                        "surface-container": "#e5eeff",
+                        "on-primary-fixed": "#00174b",
+                        "surface-tint": "#0053db",
+                        "on-tertiary-container": "#eff0f1",
+                        "tertiary-fixed": "#e1e3e4",
+                        "on-secondary-fixed": "#002109",
+                        "secondary-fixed-dim": "#3de273",
+                        "on-error-container": "#93000a",
+                        "whatsapp": "#25D366"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "20px",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "lg": "48px",
+                        "gutter": "24px",
+                        "sm": "16px",
+                        "md": "24px",
+                        "xl": "80px",
+                        "container-max": "1280px",
+                        "base": "4px",
+                        "xs": "8px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Montserrat", "sans-serif"],
+                        "body-md": ["Montserrat", "sans-serif"],
+                        "headline-sm": ["Montserrat", "sans-serif"],
+                        "headline-md": ["Montserrat", "sans-serif"],
+                        "label-md": ["Montserrat", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 800 !important;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
 </head>
-<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
-
-    <!-- Navigation -->
-    <nav id="navbar" class="navbar navbar-expand-lg fixed-top transition-nav">
-        <div class="container">
-            <a class="navbar-brand" href="#home">
-                <span class="brand-text">LUXE ivy<span class="text-gold">.</span></span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto align-items-center">
-                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#testimonials-section">Reviews</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    <li class="nav-item ms-lg-3">
-                        <a href="#contact" class="btn btn-primary rounded-pill btn-book">Book Now</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero d-flex align-items-center">
-        <div class="hero-overlay"></div>
-        <div class="container position-relative z-1">
-            <div class="row">
-                <div class="col-lg-8 col-xl-6 text-center text-lg-start">
-                    <span class="badge bg-soft-pink text-dark mb-3 py-2 px-3 rounded-pill text-uppercase letter-spacing-1">Premium Beauty Studio</span>
-                    <h1 class="display-3 fw-bold mb-4 text-white">Discover Your True Elegance</h1>
-                    <p class="lead text-white-50 mb-5">Experience luxury beauty services in a relaxing environment. Our expert stylists are dedicated to making you look and feel your absolute best.</p>
-                    <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
-                        <a href="#contact" class="btn btn-primary btn-lg rounded-pill px-5">Book Appointment</a>
-                        <a href="#services" class="btn btn-outline-light btn-lg rounded-pill px-5">Our Services</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Intro Features -->
-    <section class="py-5 bg-dark feature-ribbon">
-        <div class="container">
-            <div class="row g-4 text-center">
-                <div class="col-md-4">
-                    <div class="feature-item text-white">
-                        <i class="fa-solid fa-gem text-gold fs-2 mb-3"></i>
-                        <h4 class="h5">Premium Products</h4>
-                        <p class="text-white-50 mb-0">We use only the finest beauty products.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="feature-item text-white border-start border-end border-secondary">
-                        <i class="fa-solid fa-user-tie text-gold fs-2 mb-3"></i>
-                        <h4 class="h5">Expert Stylists</h4>
-                        <p class="text-white-50 mb-0">Highly trained professional team.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="feature-item text-white">
-                        <i class="fa-solid fa-spa text-gold fs-2 mb-3"></i>
-                        <h4 class="h5">Relaxing Atmosphere</h4>
-                        <p class="text-white-50 mb-0">A peaceful retreat from the city.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section-padding">
-        <div class="container">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-6">
-                    <div class="position-relative">
-                        <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=800" alt="Salon Interior" class="img-fluid rounded-4 shadow-lg about-img">
-                        <div class="experience-badge bg-white p-4 rounded-4 shadow position-absolute bottom-0 end-0 translate-middle-x mb-n4">
-                            <h2 class="text-gold display-5 fw-bold mb-0">10+</h2>
-                            <p class="mb-0 text-muted fw-medium">Years Experience</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 ps-lg-5 mt-5 mt-lg-0">
-                    <div class="section-title mb-4">
-                        <h6 class="text-gold fw-bold text-uppercase tracking-wide">Our Story</h6>
-                        <h2 class="display-5 fw-bold text-dark mt-2">Where Beauty Meets Perfection</h2>
-                    </div>
-                    <p class="text-muted fs-5 mb-4">LUXE ivy Salon Guruvayoor is dedicated to providing exceptional hair and beauty services. We believe that everyone deserves to feel confident and beautiful.</p>
-                    
-                    <div class="mission-vision mt-4">
-                        <div class="d-flex mb-4">
-                            <div class="icon-box bg-soft-pink rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 50px; height: 50px;">
-                                <i class="fa-solid fa-bullseye text-pink fs-5"></i>
-                            </div>
-                            <div>
-                                <h4 class="h5 fw-bold">Our Mission</h4>
-                                <p class="text-muted mb-0">To enhance the natural beauty of our clients using high-quality products and innovative techniques.</p>
-                            </div>
-                        </div>
-                        <div class="d-flex">
-                            <div class="icon-box bg-soft-gold rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 50px; height: 50px;">
-                                <i class="fa-regular fa-eye text-gold fs-5"></i>
-                            </div>
-                            <div>
-                                <h4 class="h5 fw-bold">Our Vision</h4>
-                                <p class="text-muted mb-0">To be the premier beauty destination known for excellence, creativity, and customer satisfaction.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Team -->
-            <div class="row mt-5 pt-5">
-                <div class="col-12 text-center mb-5">
-                    <h6 class="text-gold fw-bold text-uppercase tracking-wide">Meet The Experts</h6>
-                    <h2 class="fw-bold text-dark mt-2">Our Creative Team</h2>
-                </div>
-                <div class="col-md-4 mb-4 mb-md-0">
-                    <div class="team-card text-center group">
-                        <div class="overflow-hidden rounded-circle mx-auto mb-4" style="width: 200px; height: 200px;">
-                            <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&q=80&w=400" alt="Sarah - Lead Stylist" class="img-fluid w-100 h-100 object-fit-cover transition-transform">
-                        </div>
-                        <h4 class="h5 fw-bold mb-1">Rizwan</h4>
-                        <p class="text-pink mb-0">Lead Hair Stylist</p>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4 mb-md-0">
-                    <div class="team-card text-center group">
-                        <div class="overflow-hidden rounded-circle mx-auto mb-4" style="width: 200px; height: 200px;">
-                            <img src="https://images.unsplash.com/photo-1595959183082-7b570b7e08e2?auto=format&fit=crop&q=80&w=400" alt="Haritha - Esthetician" class="img-fluid w-100 h-100 object-fit-cover transition-transform">
-                        </div>
-                        <h4 class="h5 fw-bold mb-1">Haritha</h4>
-                        <p class="text-pink mb-0">Esthetician</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="team-card text-center group">
-                        <div class="overflow-hidden rounded-circle mx-auto mb-4" style="width: 200px; height: 200px;">
-                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400" alt="Jemina - Makeup Artist" class="img-fluid w-100 h-100 object-fit-cover transition-transform">
-                        </div>
-                        <h4 class="h5 fw-bold mb-1">Jemina</h4>
-                        <p class="text-pink mb-0">Lead Esthetician</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="section-padding bg-light">
-        <div class="container">
-            <div class="section-title text-center mb-5 pb-3">
-                <h6 class="text-gold fw-bold text-uppercase tracking-wide">What We Offer</h6>
-                <h2 class="display-5 fw-bold text-dark mt-2">Our Premium Services</h2>
-            </div>
-            
-            <div class="row g-4">
-                <!-- Service 1 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="card service-card h-100 border-0 rounded-4 shadow-sm overflow-hidden">
-                        <div class="service-img-wrap overflow-hidden position-relative">
-                            <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&q=80&w=600" class="card-img-top w-100 object-fit-cover" alt="Haircut & Styling">
-                            <div class="price-tag position-absolute top-0 end-0 bg-gold text-white px-3 py-1 m-3 rounded-pill fw-bold">From ₹450</div>
-                        </div>
-                        <div class="card-body p-4">
-                            <h4 class="card-title fw-bold">Haircut & Styling</h4>
-                            <p class="card-text text-muted">Precision cuts, styling, coloring, and treatments tailored to your unique face shape and lifestyle.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Service 2 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="card service-card h-100 border-0 rounded-4 shadow-sm overflow-hidden">
-                        <div class="service-img-wrap overflow-hidden position-relative">
-                            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&q=80&w=600" class="card-img-top w-100 object-fit-cover" alt="Facial & Skin Care">
-                            <div class="price-tag position-absolute top-0 end-0 bg-gold text-white px-3 py-1 m-3 rounded-pill fw-bold">From ₹650</div>
-                        </div>
-                        <div class="card-body p-4">
-                            <h4 class="card-title fw-bold">Facial & Skin Care</h4>
-                            <p class="card-text text-muted">Rejuvenating facials and skincare treatments to restore your natural glow and skin health.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Service 3 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="card service-card h-100 border-0 rounded-4 shadow-sm overflow-hidden">
-                        <div class="service-img-wrap overflow-hidden position-relative">
-                            <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&q=80&w=600" class="card-img-top w-100 object-fit-cover" alt="Bridal Makeup">
-                            <div class="price-tag position-absolute top-0 end-0 bg-gold text-white px-3 py-1 m-3 rounded-pill fw-bold">From ₹1500</div>
-                        </div>
-                        <div class="card-body p-4">
-                            <h4 class="card-title fw-bold">Bridal Makeup</h4>
-                            <p class="card-text text-muted">Flawless, long-lasting makeup application for your special day. Trial sessions included.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Service 4 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="card service-card h-100 border-0 rounded-4 shadow-sm overflow-hidden">
-                        <div class="service-img-wrap overflow-hidden position-relative">
-                            <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&q=80&w=600" class="card-img-top w-100 object-fit-cover" alt="Spa & Massage">
-                            <div class="price-tag position-absolute top-0 end-0 bg-gold text-white px-3 py-1 m-3 rounded-pill fw-bold">From ₹800</div>
-                        </div>
-                        <div class="card-body p-4">
-                            <h4 class="card-title fw-bold">Spa & Massage</h4>
-                            <p class="card-text text-muted">Melt away stress with our therapeutic massages and relaxing body treatments.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Service 5 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="card service-card h-100 border-0 rounded-4 shadow-sm overflow-hidden">
-                        <div class="service-img-wrap overflow-hidden position-relative">
-                            <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&q=80&w=600" class="card-img-top w-100 object-fit-cover" alt="Nail Art">
-                            <div class="price-tag position-absolute top-0 end-0 bg-gold text-white px-3 py-1 m-3 rounded-pill fw-bold">From ₹300</div>
-                        </div>
-                        <div class="card-body p-4">
-                            <h4 class="card-title fw-bold">Nail Art & Care</h4>
-                            <p class="card-text text-muted">Manicures, pedicures, and custom nail art designs using premium long-lasting polishes.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Service 6 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="card service-card h-100 border-0 rounded-4 shadow-sm overflow-hidden">
-                        <div class="service-img-wrap overflow-hidden position-relative">
-                            <img src="https://images.unsplash.com/photo-1596704017254-9b121068fb31?auto=format&fit=crop&q=80&w=600" class="card-img-top w-100 object-fit-cover" alt="Hair Removal">
-                            <div class="price-tag position-absolute top-0 end-0 bg-gold text-white px-3 py-1 m-3 rounded-pill fw-bold">From ₹200</div>
-                        </div>
-                        <div class="card-body p-4">
-                            <h4 class="card-title fw-bold">Hair Removal</h4>
-                            <p class="card-text text-muted">Gentle and effective waxing and threading services for smooth, flawless skin.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pricing Section -->
-    <section id="pricing" class="section-padding">
-        <div class="container">
-            <div class="section-title text-center mb-5 pb-3">
-                <h6 class="text-gold fw-bold text-uppercase tracking-wide">Pricing Plans</h6>
-                <h2 class="display-5 fw-bold text-dark mt-2">Transparent Pricing</h2>
-            </div>
-
-            <div class="row g-4 justify-content-center">
-                <!-- Basic -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="pricing-card card border-0 shadow-sm rounded-4 h-100">
-                        <div class="card-body p-5">
-                            <h4 class="fw-bold mb-3">Basic Package</h4>
-                            <h2 class="display-4 fw-bold text-gold mb-4">₹1499<span class="fs-5 text-muted fw-normal">/visit</span></h2>
-                            <ul class="list-unstyled mb-5 pricing-list">
-                                <li class="mb-3"><i class="fa-solid fa-check text-success me-2"></i> Standard Haircut</li>
-                                <li class="mb-3"><i class="fa-solid fa-check text-success me-2"></i> Wash & Blowdry</li>
-                                <li class="mb-3"><i class="fa-solid fa-check text-success me-2"></i> Basic Manicure</li>
-                                <li class="mb-3 text-muted"><i class="fa-solid fa-xmark me-2"></i> <del>Facial Treatment</del></li>
-                                <li class="mb-3 text-muted"><i class="fa-solid fa-xmark me-2"></i> <del>Spa Access</del></li>
-                            </ul>
-                            <a href="#booking" class="btn btn-outline-dark w-100 rounded-pill py-2">Select Plan</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Premium -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="pricing-card card border-0 shadow-lg rounded-4 h-100 position-relative popular-plan transform-scale">
-                        <div class="position-absolute top-0 start-50 translate-middle badge bg-gold rounded-pill px-4 py-2 fs-6 shadow">Most Popular</div>
-                        <div class="card-body p-5">
-                            <h4 class="fw-bold mb-3">Premium Package</h4>
-                            <h2 class="display-4 fw-bold text-gold mb-4">₹2499<span class="fs-5 text-muted fw-normal">/visit</span></h2>
-                            <ul class="list-unstyled mb-5 pricing-list">
-                                <li class="mb-3"><i class="fa-solid fa-check text-success me-2"></i> Advanced Hair Styling</li>
-                                <li class="mb-3"><i class="fa-solid fa-check text-success me-2"></i> Deep Conditioning</li>
-                                <li class="mb-3"><i class="fa-solid fa-check text-success me-2"></i> Classic Facial</li>
-                                <li class="mb-3"><i class="fa-solid fa-check text-success me-2"></i> Gel Manicure</li>
-                                <li class="mb-3 text-muted"><i class="fa-solid fa-xmark me-2"></i> <del>Full Body Massage</del></li>
-                            </ul>
-                            <a href="#booking" class="btn btn-primary w-100 rounded-pill py-2">Select Plan</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Bridal -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="pricing-card card border-0 shadow-sm rounded-4 h-100">
-                        <div class="card-body p-5">
-                            <h4 class="fw-bold mb-3">Bridal Package</h4>
-                            <h2 class="display-4 fw-bold text-gold mb-4">₹3499<span class="fs-5 text-muted fw-normal">/pkg</span></h2>
-                            <ul class="list-unstyled mb-5 pricing-list">
-                                <li class="mb-3"><i class="fa-solid fa-check text-success me-2"></i> Bridal Makeup</li>
-                                <li class="mb-3"><i class="fa-solid fa-check text-success me-2"></i> Intricate Hair Updo</li>
-                                <li class="mb-3"><i class="fa-solid fa-check text-success me-2"></i> Pre-wedding Facial</li>
-                                <li class="mb-3"><i class="fa-solid fa-check text-success me-2"></i> Spa Pedicure & Manicure</li>
-                                <li class="mb-3"><i class="fa-solid fa-check text-success me-2"></i> Trial Session Included</li>
-                            </ul>
-                            <a href="#booking" class="btn btn-outline-dark w-100 rounded-pill py-2">Select Plan</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section id="gallery" class="section-padding bg-dark text-white">
-        <div class="container">
-            <div class="section-title text-center mb-5 pb-3 text-white">
-                <h6 class="text-gold fw-bold text-uppercase tracking-wide">Our Portfolio</h6>
-                <h2 class="display-5 fw-bold mt-2">Style Gallery</h2>
-            </div>
-
-            <div class="row g-2">
-                <div class="col-6 col-md-4">
-                    <div class="gallery-item position-relative overflow-hidden cursor-pointer" onclick="openLightbox(this)">
-                        <img src="assets/images/gallery-1.jpg" class="img-fluid w-100 object-fit-cover" alt="Gallery Image 1" style="height: 300px;">
-                        <div class="gallery-overlay d-flex align-items-center justify-content-center position-absolute top-0 start-0 w-100 h-100">
-                            <i class="fa-solid fa-expand fs-3 text-white"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4">
-                    <div class="gallery-item position-relative overflow-hidden cursor-pointer" onclick="openLightbox(this)">
-                        <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&q=80&w=600" class="img-fluid w-100 object-fit-cover" alt="Gallery Image 2" style="height: 300px;">
-                        <div class="gallery-overlay d-flex align-items-center justify-content-center position-absolute top-0 start-0 w-100 h-100">
-                            <i class="fa-solid fa-expand fs-3 text-white"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4">
-                    <div class="gallery-item position-relative overflow-hidden cursor-pointer" onclick="openLightbox(this)">
-                        <img src="assets/images/gallery-3.jpg" class="img-fluid w-100 object-fit-cover" alt="Gallery Image 3" style="height: 300px;">
-                        <div class="gallery-overlay d-flex align-items-center justify-content-center position-absolute top-0 start-0 w-100 h-100">
-                            <i class="fa-solid fa-expand fs-3 text-white"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4">
-                    <div class="gallery-item position-relative overflow-hidden cursor-pointer" onclick="openLightbox(this)">
-                        <img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&q=80&w=600" class="img-fluid w-100 object-fit-cover" alt="Gallery Image 4" style="height: 300px;">
-                        <div class="gallery-overlay d-flex align-items-center justify-content-center position-absolute top-0 start-0 w-100 h-100">
-                            <i class="fa-solid fa-expand fs-3 text-white"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4">
-                    <div class="gallery-item position-relative overflow-hidden cursor-pointer" onclick="openLightbox(this)">
-                        <img src="assets/images/gallery-5.jpg" class="img-fluid w-100 object-fit-cover" alt="Gallery Image 5" style="height: 300px;">
-                        <div class="gallery-overlay d-flex align-items-center justify-content-center position-absolute top-0 start-0 w-100 h-100">
-                            <i class="fa-solid fa-expand fs-3 text-white"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4">
-                    <div class="gallery-item position-relative overflow-hidden cursor-pointer" onclick="openLightbox(this)">
-                        <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=600" class="img-fluid w-100 object-fit-cover" alt="Gallery Image 6" style="height: 300px;">
-                        <div class="gallery-overlay d-flex align-items-center justify-content-center position-absolute top-0 start-0 w-100 h-100">
-                            <i class="fa-solid fa-expand fs-3 text-white"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Custom Lightbox -->
-    <div id="lightbox" class="lightbox">
-        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
-        <img class="lightbox-content" id="lightbox-img">
-    </div>
-
-    <!-- Testimonials -->
-    <section id="testimonials-section" class="section-padding bg-light">
-        <div class="container">
-            <div class="row justify-content-center">
-                <!-- Testimonials (Carousel) -->
-                <div class="col-lg-10">
-                    <div class="bg-dark text-white p-4 p-md-5 rounded-4 shadow-lg h-100 d-flex flex-column justify-content-center testimonial-bg position-relative overflow-hidden">
-                        <div class="position-absolute top-0 end-0 opacity-10 p-4">
-                            <i class="fa-solid fa-quote-right fa-6x"></i>
-                        </div>
-                        <div class="section-title mb-5 position-relative z-1">
-                            <h6 class="text-gold fw-bold text-uppercase tracking-wide">Testimonials</h6>
-                            <h3 class="fw-bold mt-2">What Our Clients Say</h3>
-                        </div>
-
-                        <div id="testimonialCarousel" class="carousel slide position-relative z-1" data-bs-ride="carousel">
-                            <div class="carousel-indicators mb-0" style="bottom: -30px;">
-                                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            </div>
-                            <div class="carousel-inner pb-4">
-                                <!-- Review 1 -->
-                                <div class="carousel-item active">
-                                    <div class="text-gold mb-3">
-                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                                    </div>
-                                    <p class="fs-5 fst-italic mb-4">"First things first, I had a truly great experience at Luxe Ivy Salon. I went in for a haircut and hair colour. The staff were incredibly welcoming and warm..."</p>
-                                    <div class="d-flex align-items-center">
-                                        <img src="https://ui-avatars.com/api/?name=Arya+V&background=d4af37&color=fff&rounded=true" alt="Arya" class="rounded-circle me-3" width="50">
-                                        <div>
-                                            <h6 class="mb-0 fw-bold">Arya V.</h6>
-                                            <small class="text-white-50">Local Guide</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Review 2 -->
-                                <div class="carousel-item">
-                                    <div class="text-gold mb-3">
-                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                                    </div>
-                                    <p class="fs-5 fst-italic mb-4">"I had a great experience at this salon! Rizwan is extremely skilled and experienced. He really understands what kind of haircut you want and delivers it perfectly."</p>
-                                    <div class="d-flex align-items-center">
-                                        <img src="https://ui-avatars.com/api/?name=Ahamad+Z&background=d4af37&color=fff&rounded=true" alt="Ahamad" class="rounded-circle me-3" width="50">
-                                        <div>
-                                            <h6 class="mb-0 fw-bold">Ahamad Z.</h6>
-                                            <small class="text-white-50">Customer</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Review 3 -->
-                                <div class="carousel-item">
-                                    <div class="text-gold mb-3">
-                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                                    </div>
-                                    <p class="fs-5 fst-italic mb-4">"My husband and I had a great experience. We did facial, waxing, pedicure, hair services. Special thanks to Jemina, Sreejana, and Roshni for their excellent work."</p>
-                                    <div class="d-flex align-items-center">
-                                        <img src="https://ui-avatars.com/api/?name=Afna+M&background=d4af37&color=fff&rounded=true" alt="Afna" class="rounded-circle me-3" width="50">
-                                        <div>
-                                            <h6 class="mb-0 fw-bold">Afna M.</h6>
-                                            <small class="text-white-50">Customer</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section-padding">
-        <div class="container">
-            <div class="section-title text-center mb-5 pb-3">
-                <h6 class="text-gold fw-bold text-uppercase tracking-wide">Get In Touch</h6>
-                <h2 class="display-5 fw-bold text-dark mt-2">Visit Our Studio</h2>
-            </div>
-
-            <div class="row g-5">
-                <div class="col-lg-5">
-                    <div class="contact-info-card bg-white p-4 rounded-4 shadow-sm mb-4 d-flex align-items-center">
-                        <div class="icon-box bg-light rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 60px; height: 60px;">
-                            <i class="fa-solid fa-location-dot text-gold fs-4"></i>
-                        </div>
-                        <div>
-                            <h5 class="fw-bold mb-1">Our Location</h5>
-                            <p class="text-muted mb-0">1st floor, Alreem complex, junction<br>Mammiyoor, Guruvayur, Kerala 680101</p>
-                        </div>
-                    </div>
-                    <div class="contact-info-card bg-white p-4 rounded-4 shadow-sm mb-4 d-flex align-items-center">
-                        <div class="icon-box bg-light rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 60px; height: 60px;">
-                            <i class="fa-solid fa-phone text-gold fs-4"></i>
-                        </div>
-                        <div>
-                            <h5 class="fw-bold mb-1">Phone Number</h5>
-                            <p class="text-muted mb-0">099618 00091<br>099618 00091</p>
-                        </div>
-                    </div>
-                    <div class="contact-info-card bg-white p-4 rounded-4 shadow-sm mb-4 d-flex align-items-center">
-                        <div class="icon-box bg-light rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 60px; height: 60px;">
-                            <i class="fa-solid fa-globe text-gold fs-4"></i>
-                        </div>
-                        <div>
-                            <h5 class="fw-bold mb-1">Email</h5>
-                            <p class="text-muted mb-0">
-                                info@luxeivysalon.com<br>
-                                <a href="mailto:info@luxeivysalon.com" class="text-decoration-none">
-                                    Send Email
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                    <!-- Smaller Map -->
-                    <div class="rounded-4 overflow-hidden shadow-sm map-container" style="height: 250px;">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.677334796245!2d76.0357778!3d10.597652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba79413203f7e53%3A0xc3f5b7cb3f283a00!2sLUXE%20ivy%20Salon%20Guruvayoor!5e0!3m2!1sen!2sin!4v1714000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-                
-                <!-- Professional Booking UI -->
-                <div class="col-lg-7">
-                    <div class="booking-ui-card bg-white p-4 p-md-5 rounded-4 shadow-lg position-relative overflow-hidden h-100">
-                        <div class="section-title mb-4">
-                            <h6 class="text-gold fw-bold text-uppercase tracking-wide">Quick Booking</h6>
-                            <h3 class="fw-bold text-dark mt-2">Reserve Your Slot</h3>
-                        </div>
-                        
-                        <!-- Success Message -->
-                        <div id="booking-success" class="alert alert-success d-none mb-4" role="alert">
-                            <i class="fa-solid fa-check-circle me-2"></i> Your appointment request has been submitted successfully.
-                        </div>
-
-                        <form id="booking-form" novalidate>
-                            <!-- Step 1: Services -->
-                            <div class="mb-4">
-                                <label class="form-label fw-bold text-dark mb-3">1. Select Service <span class="text-danger">*</span></label>
-                                <div class="service-selector gap-2 d-flex flex-wrap">
-                                    <input type="checkbox" class="btn-check" name="service" id="srv-hair" value="Haircut" autocomplete="off">
-                                    <label class="btn btn-outline-gold rounded-pill px-4 py-2" for="srv-hair"><i class="fa-solid fa-scissors me-2"></i>Haircut</label>
-
-                                    <input type="checkbox" class="btn-check" name="service" id="srv-facial" value="Facial" autocomplete="off">
-                                    <label class="btn btn-outline-gold rounded-pill px-4 py-2" for="srv-facial"><i class="fa-solid fa-spa me-2"></i>Facial</label>
-
-                                    <input type="checkbox" class="btn-check" name="service" id="srv-bridal" value="Bridal" autocomplete="off">
-                                    <label class="btn btn-outline-gold rounded-pill px-4 py-2" for="srv-bridal"><i class="fa-solid fa-ring me-2"></i>Bridal</label>
-
-                                    <input type="checkbox" class="btn-check" name="service" id="srv-nails" value="Nails" autocomplete="off">
-                                    <label class="btn btn-outline-gold rounded-pill px-4 py-2" for="srv-nails"><i class="fa-solid fa-hand-sparkles me-2"></i>Nails</label>
-                                </div>
-                                <div id="service-error" class="text-danger small mt-2 d-none">Please select at least one service.</div>
-                            </div>
-
-                            <!-- Step 2: Date -->
-                            <div class="mb-4">
-                                <div class="d-flex justify-content-between align-items-center mb-3">
-                                    <label class="form-label fw-bold text-dark mb-0">2. Choose Date <span class="text-danger">*</span></label>
-                                    <div class="position-relative">
-                                        <input type="date" id="custom-date-picker" class="form-control" style="visibility: hidden; position: absolute; width: 0; height: 0;">
-                                        <button type="button" class="btn btn-sm btn-outline-gold rounded-pill px-3" onclick="document.getElementById('custom-date-picker').showPicker()"><i class="fa-solid fa-calendar-alt me-1"></i> Pick a Date</button>
-                                    </div>
-                                </div>
-                                <div class="date-selector d-flex gap-2 overflow-auto pb-2" id="date-container">
-                                    <!-- JS will populate dates here -->
-                                </div>
-                                <input type="hidden" id="selected-date" name="date" required>
-                            </div>
-
-                            <!-- Step 3: Time -->
-                            <div class="mb-4">
-                                <label class="form-label fw-bold text-dark mb-3">3. Available Time <span class="text-danger">*</span></label>
-                                <div class="time-selector grid-time gap-2">
-                                    <input type="radio" class="btn-check" name="time" id="time-1" value="10:00 AM" autocomplete="off" required>
-                                    <label class="btn btn-outline-dark rounded-3 py-2 text-center" for="time-1">10:00 AM</label>
-
-                                    <input type="radio" class="btn-check" name="time" id="time-2" value="11:30 AM" autocomplete="off">
-                                    <label class="btn btn-outline-dark rounded-3 py-2 text-center" for="time-2">11:30 AM</label>
-
-                                    <input type="radio" class="btn-check" name="time" id="time-3" value="01:00 PM" autocomplete="off">
-                                    <label class="btn btn-outline-dark rounded-3 py-2 text-center" for="time-3">01:00 PM</label>
-
-                                    <input type="radio" class="btn-check" name="time" id="time-4" value="02:30 PM" autocomplete="off">
-                                    <label class="btn btn-outline-dark rounded-3 py-2 text-center" for="time-4">02:30 PM</label>
-
-                                    <input type="radio" class="btn-check" name="time" id="time-5" value="04:00 PM" autocomplete="off">
-                                    <label class="btn btn-outline-dark rounded-3 py-2 text-center" for="time-5">04:00 PM</label>
-                                    
-                                    <input type="radio" class="btn-check" name="time" id="time-6" value="05:30 PM" autocomplete="off">
-                                    <label class="btn btn-outline-dark rounded-3 py-2 text-center" for="time-6">05:30 PM</label>
-                                </div>
-                            </div>
-
-                            <!-- Step 4: Details -->
-                            <div class="mb-4">
-                                <label class="form-label fw-bold text-dark mb-3">4. Your Details <span class="text-danger">*</span></label>
-                                <div class="row g-3">
-                                    <div class="col-md-6">
-                                        <input type="text" class="form-control form-control-lg bg-light border-0 custom-input" id="name" placeholder="Full Name" required>
-                                        <div class="invalid-feedback">Please enter your name.</div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <input type="tel" class="form-control form-control-lg bg-light border-0 custom-input" id="phone" placeholder="Phone Number" required>
-                                        <div class="invalid-feedback">Please enter your phone number.</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <button type="submit" class="btn btn-primary btn-lg w-100 rounded-pill py-3 fw-bold mt-2 shadow-sm transition-all hover-lift" style="background-color: #25D366; border-color: #25D366; color: white;">
-                                <i class="fa-brands fa-whatsapp fs-5 me-2"></i> Confirm via WhatsApp
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white pt-5 pb-4 border-top border-secondary">
-        <div class="container pt-3">
-            <div class="row g-4 mb-5">
-                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-                    <a class="navbar-brand d-inline-block mb-3" href="#">
-                        <span class="fs-2 fw-bold font-playfair">LUXE ivy<span class="text-gold">.</span></span>
+<body class="bg-background text-on-surface font-body-md selection:bg-primary-fixed-dim">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-container/80 backdrop-blur-lg shadow-sm border-b border-white/40 dark:border-outline-variant/20">
+<div class="flex justify-between items-center px-gutter py-4 max-w-container-max mx-auto">
+<a class="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed" href="#">SmileCare Dental Hospital</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary transition-all duration-300" href="#services">Services</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary transition-all duration-300" href="#why-us">Why Us</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary transition-all duration-300" href="#team">Meet the Team</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary transition-all duration-300" href="#gallery">Gallery</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary transition-all duration-300" href="#faq">FAQ</a>
+<a class="bg-primary-container text-on-primary-container px-6 py-2.5 rounded-full font-label-md text-label-md transition-transform hover:scale-105 active:scale-95 duration-150" href="#booking">Book Now</a>
+</div>
+<button class="md:hidden text-primary" id="mobile-menu-btn">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative pt-32 pb-20 overflow-hidden min-h-[90vh] flex items-center">
+<div class="absolute -top-24 -right-24 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-24 -left-24 w-96 h-96 bg-secondary/10 rounded-full blur-3xl"></div>
+<div class="max-w-container-max mx-auto px-gutter grid lg:grid-cols-2 gap-12 items-center relative z-10">
+<div class="reveal">
+<span class="inline-block px-4 py-1.5 bg-primary/5 text-primary border border-primary/10 rounded-full font-label-sm text-label-sm mb-6 uppercase tracking-wider">Welcome to Excellence</span>
+<h1 class="font-display-lg text-display-lg text-on-surface leading-tight mb-6">Your Healthy Smile <br/><span class="text-primary">Starts Here</span></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-lg">Professional dental care with experienced dentists using modern technology. Experience anxiety-free treatments in our premium clinic.</p>
+<div class="flex flex-wrap gap-4">
+<a class="bg-primary text-on-primary px-8 py-4 rounded-2xl font-label-md text-label-md flex items-center gap-2 shadow-lg shadow-primary/20 hover:bg-primary-container transition-all hover:scale-[1.02]" href="#booking">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
+                        Book Appointment
                     </a>
-                    <p class="text-white-50 pe-lg-4">Your premium destination for luxury beauty and spa services. We are dedicated to bringing out the best version of you.</p>
-                    <div class="d-flex gap-3 mt-4">
-                        <a href="#" class="social-icon text-white bg-secondary bg-opacity-25 rounded-circle d-flex align-items-center justify-content-center transition-all hover-gold" style="width: 40px; height: 40px;"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#" class="social-icon text-white bg-secondary bg-opacity-25 rounded-circle d-flex align-items-center justify-content-center transition-all hover-gold" style="width: 40px; height: 40px;"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#" class="social-icon text-white bg-secondary bg-opacity-25 rounded-circle d-flex align-items-center justify-content-center transition-all hover-gold" style="width: 40px; height: 40px;"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#" class="social-icon text-white bg-secondary bg-opacity-25 rounded-circle d-flex align-items-center justify-content-center transition-all hover-gold" style="width: 40px; height: 40px;"><i class="fa-brands fa-tiktok"></i></a>
+<a class="bg-whatsapp text-white px-8 py-4 rounded-2xl font-label-md text-label-md flex items-center gap-2 shadow-lg shadow-whatsapp/20 hover:brightness-110 transition-all hover:scale-[1.02]" href="https://wa.me/919995544316" target="_blank">
+<span class="material-symbols-outlined">chat</span>
+                        WhatsApp Consultation
+                    </a>
+</div>
+<div class="mt-12 flex items-center gap-4">
+<div class="flex -space-x-3">
+<div class="w-12 h-12 rounded-full border-2 border-surface bg-slate-200 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A portrait of a smiling female patient after a dental checkup, soft lighting, modern background, high-end photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCa8-1pHlGcsL7ZB997VKdSPjxKEs1BzGwiSsUIF4tPi2ZsPkwfWLCYBQDTA3cUY8K8niH87FD-4db3jT8kzuyjzS6d3ytvTILUGN0HFhtRVgj3qhA0VA2lfsk6HL_zDGyuvzX2cLRt37CXUE-KFNYXSlrb5gNc4z_Rm9dlPo3MqvPeSWM0RjruJSfW6xr7dNy493_Ij1h9LKmcgZp0Vj8fJunYPtkaqbQon808jwblQAmPJ-buBMIHKg"/>
+</div>
+<div class="w-12 h-12 rounded-full border-2 border-surface bg-slate-200 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A portrait of a cheerful young man with a bright white smile, outdoor lighting, healthcare lifestyle photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzzxHAoLWkxpcEUkWWnw3dV4kXQjVOrVD8M6slgZGs73wGTKVovsaMS6TJiRCiDg4oI5bLsHAGcegMRVgeAyKefRG1Ey4I19Th3hm2Uc9t22aGbl2_iHnsUxaUTbQXjJsUOnHWpNP1DJ6WVyjC3FQPPmjReMABx2DAtHwo9WEAF8FbNOQrqRjtyecqCdsHWtysvOEcfw4BX4toSWdpdLrVQgk3R23vZHJEZWJoj_aXPhWGOGYJmdykXQ"/>
+</div>
+<div class="w-12 h-12 rounded-full border-2 border-surface bg-slate-200 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A professional dental surgeon in clinical scrubs smiling warmly at the camera, clean dental clinic setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEFzX__bZ1-UUUGX32OT36DN4OPgirjaBL0HigGGuthd9UVCX7O_GNyvTbfV1BLdrNTp2QMq1oiTEn8DPGAUVUkVVcfHTQkYeTZ6TIRLot90wcbYIks2imTU8_vnMtw4NQKUkyxQ-LKkJTCWK80Aw2Yl1grUcgqleR3dNeVoFSCXWPNzGOqGuItrVh_GDiiUluH8dZ9loBwcLQgzly1f_Bc-8VxqSnel9LhAyG0w8tlav300bIUaTScw"/>
+</div>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-bold">5,000+ Happy Patients</p>
+<p class="text-label-sm text-on-surface-variant">Trusted for over 10 years</p>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4 reveal" style="transition-delay: 200ms;">
+<div class="space-y-4 pt-12">
+<img alt="SmileCare Dental Hospital Clinic Interior" class="w-full h-80 object-cover rounded-2xl shadow-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCK3H7-uAHlsC0uJLpm2eVZ4a4a7HhU15RN3qF1ogKOwI_yLTQQCK2Dt0TIMGMUTcWAaS1xD8wO11znpV1La0GNahA_VQT7ihXzxnm7s-ToUHQIP9SApqKMawVkULG6X08oqlTZ4GBshlDxDOHMzuaQ0LBF5ohAeoE1WmXGHvtOHlQ-4-GM09SUa8q1uEHFlTJNFxp8h4sNTSwOP2_SD5AzcwJrOo64fVYqFCr3w807KPWuAFguXE5o-w"/>
+<div class="bg-primary text-on-primary p-6 rounded-2xl shadow-lg border border-primary/20 flex flex-col items-center justify-center text-center">
+<div class="flex items-center gap-1 mb-2 text-[#FBBF24]">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-headline-sm text-headline-sm font-bold">4.9/5 Rating</p>
+<p class="text-label-sm opacity-90 uppercase tracking-tighter flex items-center justify-center gap-1 mt-1"><span class="material-symbols-outlined text-[14px]">verified</span> Verified by Google</p>
+</div>
+</div>
+<div class="space-y-4">
+<img alt="Smiling Patient" class="w-full h-[32rem] object-cover rounded-2xl shadow-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATy5u_ftLGqgW87-_2a64OwegZogyJDm2teOAmbFN6tP-xY-43j4_JRsqRFiPj5B6aHiBnFJR9w9JXREaNrMYd82tyVwsPkEiDfmEurc214YqAB9XlFYynyxl4W4WQPORsFwFtUUWwr7l255u-0lS8tDVscpzZgUNbSA8Ecgpdp_KwynifjpttuReiYPJEGMgfxRGzNkHyGswxJRjuKNRYJ0v93TLKwIMov1wkl6q_NIfDM-LPJUIzgA"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust & Accreditations Banner -->
+<section class="py-8 bg-surface border-y border-outline-variant/20">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="flex flex-wrap justify-center gap-8 md:gap-16 items-center opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
+<div class="flex items-center gap-2"><span class="material-symbols-outlined text-3xl">verified_user</span><span class="font-bold font-label-md">ISO 9001:2015 Certified</span></div>
+<div class="flex items-center gap-2"><span class="material-symbols-outlined text-3xl">health_and_safety</span><span class="font-bold font-label-md">NABH Accredited</span></div>
+<div class="flex items-center gap-2"><span class="material-symbols-outlined text-3xl">workspace_premium</span><span class="font-bold font-label-md">IDA Member</span></div>
+<div class="flex items-center gap-2"><span class="material-symbols-outlined text-3xl">sanitizer</span><span class="font-bold font-label-md">100% Sterilization Guarantee</span></div>
+</div>
+</div>
+</section>
+<!-- About Section: Value Propositions -->
+<section class="py-xl bg-surface-container-low">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Experienced Dentists -->
+<div class="bg-surface p-8 rounded-2xl border border-outline-variant/30 reveal group hover:shadow-xl transition-all duration-500">
+<div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">medical_services</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-3">Experienced Dentists</h3>
+<p class="text-on-surface-variant font-body-md">Leading specialists with over 15 years of clinical expertise.</p>
+</div>
+<!-- Modern Equipment -->
+<div class="bg-surface p-8 rounded-2xl border border-outline-variant/30 reveal group hover:shadow-xl transition-all duration-500" style="transition-delay: 100ms;">
+<div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">biotech</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-3">Modern Equipment</h3>
+<p class="text-on-surface-variant font-body-md">Utilizing latest 3D imaging and laser dental technology.</p>
+</div>
+<!-- Pain-Free -->
+<div class="bg-surface p-8 rounded-2xl border border-outline-variant/30 reveal group hover:shadow-xl transition-all duration-500" style="transition-delay: 200ms;">
+<div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">sentiment_satisfied</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-3">Pain-Free Care</h3>
+<p class="text-on-surface-variant font-body-md">Gentle techniques designed for absolute patient comfort.</p>
+</div>
+<!-- Sterile Environment -->
+<div class="bg-surface p-8 rounded-2xl border border-outline-variant/30 reveal group hover:shadow-xl transition-all duration-500" style="transition-delay: 300ms;">
+<div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">sanitizer</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-3">Sterile Environment</h3>
+<p class="text-on-surface-variant font-body-md">Strict adherence to international hygiene standards.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Grid -->
+<section class="py-xl" id="services">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="text-center mb-16 reveal">
+<span class="text-primary font-label-md uppercase tracking-widest mb-4 block">Our Specialties</span>
+<h2 class="font-headline-md text-headline-md mb-6">Comprehensive Dental Services</h2>
+<div class="w-20 h-1 bg-primary mx-auto rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Service Cards -->
+<div class="service-card reveal p-8 rounded-2xl bg-surface-bright border border-outline-variant/20 hover:border-primary/30 transition-all hover:bg-white hover:shadow-2xl hover:-translate-y-2 group cursor-pointer">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 block group-hover:rotate-12 transition-transform">health_and_safety</span>
+<h4 class="font-headline-sm text-headline-sm mb-2">Checkup</h4>
+<p class="text-on-surface-variant text-label-md">Comprehensive oral examinations and X-rays.</p>
+</div>
+<div class="service-card reveal p-8 rounded-2xl bg-surface-bright border border-outline-variant/20 hover:border-primary/30 transition-all hover:bg-white hover:shadow-2xl hover:-translate-y-2 group cursor-pointer" style="transition-delay: 50ms;">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 block group-hover:rotate-12 transition-transform">cleaning_services</span>
+<h4 class="font-headline-sm text-headline-sm mb-2">Cleaning</h4>
+<p class="text-on-surface-variant text-label-md">Professional scaling and polishing for a fresh smile.</p>
+</div>
+<div class="service-card reveal p-8 rounded-2xl bg-surface-bright border border-outline-variant/20 hover:border-primary/30 transition-all hover:bg-white hover:shadow-2xl hover:-translate-y-2 group cursor-pointer" style="transition-delay: 100ms;">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 block group-hover:rotate-12 transition-transform">auto_awesome</span>
+<h4 class="font-headline-sm text-headline-sm mb-2">Whitening</h4>
+<p class="text-on-surface-variant text-label-md">Advanced bleaching systems for instant brightness.</p>
+</div>
+<div class="service-card reveal p-8 rounded-2xl bg-surface-bright border border-outline-variant/20 hover:border-primary/30 transition-all hover:bg-white hover:shadow-2xl hover:-translate-y-2 group cursor-pointer" style="transition-delay: 150ms;">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 block group-hover:rotate-12 transition-transform">account_tree</span>
+<h4 class="font-headline-sm text-headline-sm mb-2">Root Canal</h4>
+<p class="text-on-surface-variant text-label-md">Modern endodontic therapy to save natural teeth.</p>
+</div>
+<div class="service-card reveal p-8 rounded-2xl bg-surface-bright border border-outline-variant/20 hover:border-primary/30 transition-all hover:bg-white hover:shadow-2xl hover:-translate-y-2 group cursor-pointer" style="transition-delay: 200ms;">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 block group-hover:rotate-12 transition-transform">architecture</span>
+<h4 class="font-headline-sm text-headline-sm mb-2">Implants</h4>
+<p class="text-on-surface-variant text-label-md">Permanent, aesthetic solutions for missing teeth.</p>
+</div>
+<div class="service-card reveal p-8 rounded-2xl bg-surface-bright border border-outline-variant/20 hover:border-primary/30 transition-all hover:bg-white hover:shadow-2xl hover:-translate-y-2 group cursor-pointer" style="transition-delay: 250ms;">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 block group-hover:rotate-12 transition-transform">grid_view</span>
+<h4 class="font-headline-sm text-headline-sm mb-2">Braces</h4>
+<p class="text-on-surface-variant text-label-md">Invisalign and traditional orthodontic solutions.</p>
+</div>
+<div class="service-card reveal p-8 rounded-2xl bg-surface-bright border border-outline-variant/20 hover:border-primary/30 transition-all hover:bg-white hover:shadow-2xl hover:-translate-y-2 group cursor-pointer" style="transition-delay: 300ms;">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 block group-hover:rotate-12 transition-transform">close</span>
+<h4 class="font-headline-sm text-headline-sm mb-2">Extraction</h4>
+<p class="text-on-surface-variant text-label-md">Gentle removal of problematic or wisdom teeth.</p>
+</div>
+<div class="service-card reveal p-8 rounded-2xl bg-surface-bright border border-outline-variant/20 hover:border-primary/30 transition-all hover:bg-white hover:shadow-2xl hover:-translate-y-2 group cursor-pointer" style="transition-delay: 350ms;">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 block group-hover:rotate-12 transition-transform">face</span>
+<h4 class="font-headline-sm text-headline-sm mb-2">Cosmetic</h4>
+<p class="text-on-surface-variant text-label-md">Veneers and smile makeovers for perfect aesthetics.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us: Stats Section -->
+<section class="py-xl bg-on-surface text-surface overflow-hidden relative" id="why-us">
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<div class="absolute top-0 right-0 w-full h-full bg-[radial-gradient(circle_at_70%_30%,#2563eb,transparent_50%)]"></div>
+</div>
+<div class="max-w-container-max mx-auto px-gutter relative z-10">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div class="reveal">
+<h2 class="font-headline-md text-headline-md mb-8">Why SmileCare Dental Hospital stands out</h2>
+<p class="font-body-lg text-body-lg text-outline-variant mb-12">We combine clinical excellence with a patient-first philosophy to redefine your dental experience. Our clinic isn't just about treatments; it's about lasting oral health and confidence.</p>
+<div class="grid grid-cols-3 gap-8">
+<div>
+<p class="text-5xl font-bold text-secondary-fixed mb-2">10+</p>
+<p class="text-label-md text-outline-variant uppercase">Years Experience</p>
+</div>
+<div>
+<p class="text-5xl font-bold text-secondary-fixed mb-2">5K+</p>
+<p class="text-label-md text-outline-variant uppercase">Happy Patients</p>
+</div>
+<div>
+<p class="text-5xl font-bold text-secondary-fixed mb-2">4.9</p>
+<p class="text-label-md text-outline-variant uppercase">Rating</p>
+</div>
+</div>
+</div>
+<div class="relative reveal">
+<div class="aspect-square rounded-full border border-outline-variant/20 p-8">
+<div class="w-full h-full rounded-full border border-outline-variant/40 p-8 animate-[spin_20s_linear_infinite]">
+<div class="w-4 h-4 bg-primary rounded-full absolute -top-2 left-1/2"></div>
+<div class="w-3 h-3 bg-secondary-fixed rounded-full absolute top-1/2 -right-1.5"></div>
+</div>
+</div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="text-center p-12 bg-surface/5 backdrop-blur-md rounded-2xl border border-white/10">
+<span class="material-symbols-outlined text-6xl text-secondary-fixed mb-4">award_star</span>
+<p class="font-headline-sm">Accredited Excellence</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Meet Our Dentist -->
+<section class="py-xl" id="team">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div class="reveal">
+<div class="relative rounded-2xl overflow-hidden group">
+<img alt="Dr. Aris Thorne" class="w-full h-[600px] object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCq3QX7K36bdidOP6IHrLjjaA_Aol3gNlDkVlhSE2bZkiCxGhopsbJ1ako_jBTLH8L12d8tMpUvyZNzpkyPkJ_6njVrfmb3gHBKrSaD67tyAGZmrOHspKAZ5aCYn_fNd8_qKnKcDNRZcQIua1bjHVIo5ghTqTrEh3iMuVw6PLpza9SCH98hgyrGBe23iMMjw3s0MoJZkiJmgmCeXJz7gmXQcNzlqSq8y0PIzJsLeCH8_eJtQu1ObzF7ww"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 to-transparent flex items-end p-12">
+<div>
+<h3 class="text-white font-headline-md text-headline-md">Dr. Arjun Menon</h3>
+<p class="text-primary-fixed font-label-md uppercase tracking-widest">BDS, MDS (Oral &amp; Maxillofacial Surgery)</p>
+</div>
+</div>
+</div>
+</div>
+<div class="reveal">
+<span class="text-primary font-label-md uppercase tracking-widest mb-4 block">Our Expert</span>
+<h2 class="font-headline-md text-headline-md mb-8">Guided by Clinical <br/>Mastery &amp; Compassion</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 leading-relaxed">
+                        With over 15 years of experience and 15,000+ successful surgeries, Dr. Arjun Menon leads SmileCare Dental Hospital with a vision of blending precision medical science with patient-centered comfort.
+                    </p>
+<ul class="space-y-4 mb-10">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label-md">Ex-Consultant at Top Tier Metro Hospitals</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label-md">Member of Indian Dental Association (IDA)</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label-md">Expert in Advanced Implantology (UK Certified)</span>
+</li>
+</ul>
+<a class="inline-flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all" href="#booking">
+                        Book a session with Dr. Menon
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Appointment Booking Section (WhatsApp Logic) -->
+<section class="py-xl relative" id="booking">
+<div class="absolute inset-0 bg-primary/5 pointer-events-none"></div>
+<div class="max-w-4xl mx-auto px-gutter relative z-10">
+<div class="glass p-8 md:p-12 rounded-[2.5rem] shadow-2xl reveal">
+<div class="text-center mb-12">
+<h2 class="font-headline-md text-headline-md mb-4">Instant Appointment</h2>
+<p class="text-on-surface-variant">Complete the steps below to book via WhatsApp.</p>
+</div>
+<form class="space-y-12" id="appointmentForm">
+<!-- Step 1: Services -->
+<div>
+<p class="font-label-md text-label-md mb-4 text-primary font-bold">1. Select Service</p>
+<div class="flex flex-wrap gap-3" id="serviceOptions">
+<label class="cursor-pointer">
+<input checked="" class="hidden peer" name="service" type="radio" value="Checkup"/>
+<span class="px-6 py-2.5 rounded-full border border-outline-variant bg-surface peer-checked:bg-primary peer-checked:text-on-primary peer-checked:border-primary transition-all inline-block text-label-md">Checkup</span>
+</label>
+<label class="cursor-pointer">
+<input class="hidden peer" name="service" type="radio" value="Cleaning"/>
+<span class="px-6 py-2.5 rounded-full border border-outline-variant bg-surface peer-checked:bg-primary peer-checked:text-on-primary peer-checked:border-primary transition-all inline-block text-label-md">Cleaning</span>
+</label>
+<label class="cursor-pointer">
+<input class="hidden peer" name="service" type="radio" value="Whitening"/>
+<span class="px-6 py-2.5 rounded-full border border-outline-variant bg-surface peer-checked:bg-primary peer-checked:text-on-primary peer-checked:border-primary transition-all inline-block text-label-md">Whitening</span>
+</label>
+<label class="cursor-pointer">
+<input class="hidden peer" name="service" type="radio" value="Braces"/>
+<span class="px-6 py-2.5 rounded-full border border-outline-variant bg-surface peer-checked:bg-primary peer-checked:text-on-primary peer-checked:border-primary transition-all inline-block text-label-md">Braces</span>
+</label>
+<label class="cursor-pointer">
+<input class="hidden peer" name="service" type="radio" value="Other"/>
+<span class="px-6 py-2.5 rounded-full border border-outline-variant bg-surface peer-checked:bg-primary peer-checked:text-on-primary peer-checked:border-primary transition-all inline-block text-label-md">Other</span>
+</label>
+</div>
+</div>
+<!-- Step 2: Date Selector -->
+<div>
+<p class="font-label-md text-label-md mb-4 text-primary font-bold">2. Choose Date</p>
+<div class="flex gap-4 overflow-x-auto no-scrollbar pb-2" id="dateGrid">
+<!-- JS will inject dates -->
+</div>
+</div>
+<!-- Step 3: Time Slots -->
+<div>
+<p class="font-label-md text-label-md mb-4 text-primary font-bold">3. Available Slots</p>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+<label class="cursor-pointer">
+<input checked="" class="hidden peer" name="time" type="radio" value="09:00 AM"/>
+<span class="block text-center py-2.5 rounded-xl border border-outline-variant bg-surface peer-checked:bg-primary peer-checked:text-on-primary transition-all text-label-md">09:00 AM</span>
+</label>
+<label class="cursor-pointer">
+<input class="hidden peer" name="time" type="radio" value="11:30 AM"/>
+<span class="block text-center py-2.5 rounded-xl border border-outline-variant bg-surface peer-checked:bg-primary peer-checked:text-on-primary transition-all text-label-md">11:30 AM</span>
+</label>
+<label class="cursor-pointer">
+<input class="hidden peer" name="time" type="radio" value="02:00 PM"/>
+<span class="block text-center py-2.5 rounded-xl border border-outline-variant bg-surface peer-checked:bg-primary peer-checked:text-on-primary transition-all text-label-md">02:00 PM</span>
+</label>
+<label class="cursor-pointer">
+<input class="hidden peer" name="time" type="radio" value="04:30 PM"/>
+<span class="block text-center py-2.5 rounded-xl border border-outline-variant bg-surface peer-checked:bg-primary peer-checked:text-on-primary transition-all text-label-md">04:30 PM</span>
+</label>
+</div>
+</div>
+<!-- Step 4: Patient Info -->
+<div class="grid md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="font-label-md text-label-md px-1">Full Name</label>
+<input class="w-full bg-surface-container-lowest border-none rounded-xl p-4 focus:ring-2 focus:ring-primary/20" id="pName" placeholder="John Doe" required="" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md px-1">Phone Number</label>
+<input class="w-full bg-surface-container-lowest border-none rounded-xl p-4 focus:ring-2 focus:ring-primary/20" id="pPhone" placeholder="+91 XXXXX XXXXX" required="" type="tel"/>
+</div>
+<div class="space-y-2 md:col-span-2">
+<label class="font-label-md text-label-md px-1">Special Requirements / Message</label>
+<textarea class="w-full bg-surface-container-lowest border-none rounded-xl p-4 focus:ring-2 focus:ring-primary/20" id="pMessage" placeholder="Tell us about your concern..." rows="3"></textarea>
+</div>
+</div>
+<!-- Step 5: Submit -->
+<button class="w-full bg-whatsapp text-white py-5 rounded-2xl font-bold flex items-center justify-center gap-3 shadow-xl hover:scale-[1.01] active:scale-[0.98] transition-all" onclick="sendToWhatsApp()" type="button">
+<span class="material-symbols-outlined text-2xl">chat</span>
+                        Confirm &amp; Book via WhatsApp
+                    </button>
+</form>
+<div class="mt-8 pt-6 border-t border-outline-variant/30 grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+<div class="flex items-center justify-center gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-whatsapp">lock</span> <span class="text-xs">100% Secure &amp; Private</span></div>
+<div class="flex items-center justify-center gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-whatsapp">payments</span> <span class="text-xs">Transparent Pricing</span></div>
+<div class="flex items-center justify-center gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-whatsapp">schedule</span> <span class="text-xs">Zero Waiting Time Guarantee</span></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-xl bg-surface">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="text-center mb-16 reveal">
+<h2 class="font-headline-md text-headline-md mb-4">What Our Patients Say</h2>
+<div class="flex justify-center gap-1 text-secondary-container">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-white p-8 rounded-2xl shadow-sm reveal border border-outline-variant/10">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center font-bold text-primary">SC</div>
+<div>
+<p class="font-bold">Sarah Chen</p>
+<p class="text-xs text-on-surface-variant">Verified Patient <span class="material-symbols-outlined text-[12px] text-whatsapp align-middle">verified</span></p>
+</div>
+</div>
+<p class="text-on-surface-variant italic">"The most anxiety-free experience I've ever had at a dentist. Dr. Menon and the team are truly exceptional!"</p>
+</div>
+<div class="bg-white p-8 rounded-2xl shadow-sm reveal border border-outline-variant/10" style="transition-delay: 100ms;">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center font-bold text-primary">MR</div>
+<div>
+<p class="font-bold">Michael Reed</p>
+<p class="text-xs text-on-surface-variant">Verified Patient <span class="material-symbols-outlined text-[12px] text-whatsapp align-middle">verified</span></p>
+</div>
+</div>
+<p class="text-on-surface-variant italic">"State-of-the-art equipment and very clear communication about the treatment plan. Highly recommend Lumina!"</p>
+</div>
+<div class="bg-white p-8 rounded-2xl shadow-sm reveal border border-outline-variant/10" style="transition-delay: 200ms;">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center font-bold text-primary">KL</div>
+<div>
+<p class="font-bold">Katherine Lee</p>
+<p class="text-xs text-on-surface-variant">Verified Patient <span class="material-symbols-outlined text-[12px] text-whatsapp align-middle">verified</span></p>
+</div>
+</div>
+<p class="text-on-surface-variant italic">"Amazing results from my whitening treatment. The clinic is incredibly clean and modern. Simply the best."</p>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="py-xl" id="faq">
+<div class="max-w-3xl mx-auto px-gutter">
+<div class="text-center mb-12 reveal">
+<h2 class="font-headline-md text-headline-md mb-4">Frequently Asked Questions</h2>
+</div>
+<div class="space-y-4">
+<div class="reveal border border-outline-variant/30 rounded-2xl overflow-hidden bg-white">
+<button class="w-full flex items-center justify-between p-6 text-left" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.arrow').classList.toggle('rotate-180')">
+<span class="font-bold">Do you accept dental insurance?</span>
+<span class="material-symbols-outlined arrow transition-transform">expand_more</span>
+</button>
+<div class="px-6 pb-6 text-on-surface-variant hidden">
+                        Yes, we partner with major insurance providers. Please bring your insurance card during your first visit or contact us via WhatsApp to verify your coverage.
                     </div>
-                </div>
-                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
-                    <h5 class="fw-bold mb-4">Quick Links</h5>
-                    <ul class="list-unstyled footer-links">
-                        <li class="mb-2"><a href="#home" class="text-white-50 text-decoration-none hover-gold transition-all">Home</a></li>
-                        <li class="mb-2"><a href="#about" class="text-white-50 text-decoration-none hover-gold transition-all">About Us</a></li>
-                        <li class="mb-2"><a href="#services" class="text-white-50 text-decoration-none hover-gold transition-all">Services</a></li>
-                        <li class="mb-2"><a href="#pricing" class="text-white-50 text-decoration-none hover-gold transition-all">Pricing</a></li>
-                        <li class="mb-2"><a href="#gallery" class="text-white-50 text-decoration-none hover-gold transition-all">Gallery</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="fw-bold mb-4">Our Services</h5>
-                    <ul class="list-unstyled footer-links">
-                        <li class="mb-2"><a href="#services" class="text-white-50 text-decoration-none hover-gold transition-all">Hair Styling</a></li>
-                        <li class="mb-2"><a href="#services" class="text-white-50 text-decoration-none hover-gold transition-all">Makeup & Beauty</a></li>
-                        <li class="mb-2"><a href="#services" class="text-white-50 text-decoration-none hover-gold transition-all">Facial Treatments</a></li>
-                        <li class="mb-2"><a href="#services" class="text-white-50 text-decoration-none hover-gold transition-all">Body Massage</a></li>
-                        <li class="mb-2"><a href="#services" class="text-white-50 text-decoration-none hover-gold transition-all">Nail Art & Care</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="fw-bold mb-4">Working Hours</h5>
-                    <ul class="list-unstyled text-white-50">
-                        <li class="d-flex justify-content-between mb-2"><span>Mon - Fri:</span> <span>9:00 AM - 8:00 PM</span></li>
-                        <li class="d-flex justify-content-between mb-2"><span>Saturday:</span> <span>10:00 AM - 6:00 PM</span></li>
-                        <li class="d-flex justify-content-between mb-2"><span>Sunday:</span> <span>Closed</span></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="row pt-4 border-top border-secondary border-opacity-50">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    <p class="text-white-50 mb-0">&copy; <span id="current-year"></span> LUXE ivy Salon. All rights reserved.</p>
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <a href="#" class="text-white-50 text-decoration-none me-3 hover-gold">Privacy Policy</a>
-                    <a href="#" class="text-white-50 text-decoration-none hover-gold">Terms of Service</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+</div>
+<div class="reveal border border-outline-variant/30 rounded-2xl overflow-hidden bg-white">
+<button class="w-full flex items-center justify-between p-6 text-left" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.arrow').classList.toggle('rotate-180')">
+<span class="font-bold">How long does a professional whitening session take?</span>
+<span class="material-symbols-outlined arrow transition-transform">expand_more</span>
+</button>
+<div class="px-6 pb-6 text-on-surface-variant hidden">
+                        Typically, an in-office whitening session takes about 60-90 minutes and provides immediate results.
+                    </div>
+</div>
+<div class="reveal border border-outline-variant/30 rounded-2xl overflow-hidden bg-white">
+<button class="w-full flex items-center justify-between p-6 text-left" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.arrow').classList.toggle('rotate-180')">
+<span class="font-bold">Is the root canal procedure painful?</span>
+<span class="material-symbols-outlined arrow transition-transform">expand_more</span>
+</button>
+<div class="px-6 pb-6 text-on-surface-variant hidden">
+                        At Lumina, we use modern anesthesia and laser technology to ensure the procedure is as comfortable and pain-free as a standard filling.
+                    </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact & Map -->
+<section class="py-xl bg-surface-container-high">
+<div class="max-w-container-max mx-auto px-gutter grid lg:grid-cols-2 gap-12">
+<div class="reveal">
+<h2 class="font-headline-md text-headline-md mb-8">Visit Our Clinic</h2>
+<div class="space-y-8">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<div>
+<p class="font-bold">Address</p>
+<p class="text-on-surface-variant">123 Wellness Blvd, Healthcare City, NY 10001</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary">call</span>
+<div>
+<p class="font-bold">Phone</p>
+<p class="text-on-surface-variant">+1 (212) 555-0198</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary">mail</span>
+<div>
+<p class="font-bold">Email</p>
+<p class="text-on-surface-variant">hello@luminadental.com</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary">schedule</span>
+<div>
+<p class="font-bold">Working Hours</p>
+<p class="text-on-surface-variant">Mon - Sat: 09:00 AM - 08:00 PM</p>
+<p class="text-on-surface-variant">Sun: Closed</p>
+</div>
+</div>
+</div>
+</div>
+<div class="reveal h-96 bg-white rounded-2xl overflow-hidden shadow-xl border-4 border-white">
+<div class="w-full h-full bg-slate-100 flex items-center justify-center relative">
+<iframe src="https://maps.google.com/maps?q=Chelakkara,+Kerala&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+<div class="absolute bottom-6 left-6 bg-white/90 backdrop-blur p-4 rounded-xl shadow-lg border border-white/20 pointer-events-none">
+<p class="text-primary font-bold">SmileCare Dental Hospital Clinic</p>
+<p class="text-xs text-on-surface-variant">Chelakkara, Kerala</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-on-surface dark:bg-surface-container-lowest py-lg">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
+<p class="font-headline-md text-headline-md text-surface dark:text-on-surface">SmileCare Dental Hospital</p>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-outline-variant hover:text-surface transition-colors font-body-md text-body-md" href="#">Privacy Policy</a>
+<a class="text-outline-variant hover:text-surface transition-colors font-body-md text-body-md" href="#">Terms of Service</a>
+<a class="text-outline-variant hover:text-surface transition-colors font-body-md text-body-md" href="#">Patient Portal</a>
+<a class="text-outline-variant hover:text-surface transition-colors font-body-md text-body-md" href="#">Careers</a>
+</div>
+</div>
+<div class="border-t border-outline-variant/10 pt-8 flex flex-col md:flex-row justify-between items-center text-outline-variant font-label-md text-label-md">
+<p>© 2024 SmileCare Dental Hospital Clinic. Excellence in Modern Dentistry.</p>
+<div class="flex gap-4 mt-4 md:mt-0">
+<a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/10 transition-all" href="#">
+<span class="material-symbols-outlined text-sm">public</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/10 transition-all" href="#">
+<span class="material-symbols-outlined text-sm">share</span>
+</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Floating UI -->
+<a class="fixed bottom-8 right-8 z-[100] w-16 h-16 bg-whatsapp text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform active:scale-95 group" href="https://wa.me/919995544316" target="_blank">
+<span class="material-symbols-outlined text-3xl">chat</span>
+<span class="absolute right-20 bg-on-surface text-surface px-4 py-2 rounded-xl text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">Chat with us</span>
+</a>
+<button class="fixed bottom-8 left-8 z-[100] w-12 h-12 bg-white text-on-surface border border-outline-variant/20 rounded-full hidden flex items-center justify-center shadow-lg hover:-translate-y-1 transition-all" id="backToTop">
+<span class="material-symbols-outlined">arrow_upward</span>
+</button>
+<script>
+        // Reveal Animations on Scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
 
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- Custom JS -->
-    <script src="assets/js/script.js"></script>
-</body>
-</html>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // Date Grid Generator
+        const dateGrid = document.getElementById('dateGrid');
+        const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+        
+        const today = new Date();
+        for (let i = 0; i < 14; i++) {
+            const date = new Date(today);
+            date.setDate(today.getDate() + i);
+            
+            const dateVal = date.toISOString().split('T')[0];
+            const isToday = i === 0;
+
+            const dateCard = `
+                <label class="flex-shrink-0 cursor-pointer">
+                    <input type="radio" name="bookingDate" value="${dateVal}" class="hidden peer" ${isToday ? 'checked' : ''}>
+                    <div class="w-20 h-24 flex flex-col items-center justify-center rounded-2xl border border-outline-variant bg-surface peer-checked:bg-primary peer-checked:text-on-primary peer-checked:border-primary transition-all">
+                        <span class="text-xs uppercase font-bold opacity-60">${days[date.getDay()]}</span>
+                        <span class="text-xl font-bold">${date.getDate()}</span>
+                        <span class="text-xs">${months[date.getMonth()]}</span>
+                    </div>
+                </label>
+            `;
+            dateGrid.innerHTML += dateCard;
+        }
+
+        // WhatsApp Logic
+        function sendToWhatsApp() {
+            const service = document.querySelector('input[name="service"]:checked').value;
+            const date = document.querySelector('input[name="bookingDate"]:checked').value;
+            const time = document.querySelector('input[name="time"]:checked').value;
+            const name = document.getElementById('pName').value;
+            const phone = document.getElementById('pPhone').value;
+            const msg = document.getElementById('pMessage').value;
+
+            if(!name || !phone) {
+                alert('Please fill in your name and phone number.');
+                return;
+            }
+
+            const text = `*New Appointment Request - SmileCare Dental Hospital*%0A%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Service:* ${service}%0A*Date:* ${date}%0A*Time:* ${time}%0A*Message:* ${msg || 'No special requirements.'}`;
+            
+            const whatsappUrl = `https://wa.me/919995544316?text=${text}`;
+            window.open(whatsappUrl, '_blank');
+        }
+
+        // Scroll Logic
+        window.addEventListener('scroll', () => {
+            const btt = document.getElementById('backToTop');
+            if (window.scrollY > 500) {
+                btt.classList.remove('hidden');
+                btt.classList.add('flex');
+            } else {
+                btt.classList.add('hidden');
+                btt.classList.remove('flex');
+            }
+        });
+
+        document.getElementById('backToTop').addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Simple Mobile Menu
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        mobileMenuBtn.addEventListener('click', () => {
+            alert('Navigation menu would expand here in a full production app.');
+        });
+    </script>
+</body></html>
+
