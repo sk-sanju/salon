@@ -3,65 +3,41 @@
 <html class="scroll-smooth" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>SmileCare Dental Hospital | Premium Modern Dentistry</title>
+<title>Luxe Royal Salon | Premium Beauty & Styling</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
                 extend: {
                     "colors": {
-                        "on-tertiary": "#ffffff",
-                        "outline-variant": "#c3c6d7",
-                        "on-surface": "#0b1c30",
-                        "primary-container": "#2563eb",
-                        "secondary-container": "#5dfd8a",
-                        "background": "#f8f9ff",
-                        "on-secondary-fixed-variant": "#005322",
-                        "on-error": "#ffffff",
-                        "primary-fixed-dim": "#b4c5ff",
-                        "on-primary": "#ffffff",
-                        "surface-container-highest": "#d3e4fe",
-                        "surface-container-high": "#dce9ff",
-                        "outline": "#737686",
-                        "on-primary-fixed-variant": "#003ea8",
-                        "inverse-surface": "#213145",
-                        "surface-container-lowest": "#ffffff",
-                        "error": "#ba1a1a",
-                        "on-tertiary-fixed-variant": "#454748",
-                        "on-tertiary-fixed": "#191c1d",
-                        "inverse-on-surface": "#eaf1ff",
-                        "error-container": "#ffdad6",
-                        "tertiary": "#525556",
-                        "tertiary-fixed-dim": "#c5c7c8",
-                        "on-secondary-container": "#007232",
-                        "on-primary-container": "#eeefff",
-                        "on-secondary": "#ffffff",
-                        "secondary-fixed": "#66ff8e",
-                        "secondary": "#006d2f",
-                        "primary": "#004ac6",
-                        "surface": "#f8f9ff",
-                        "surface-container-low": "#eff4ff",
-                        "surface-dim": "#cbdbf5",
-                        "on-surface-variant": "#434655",
-                        "surface-bright": "#f8f9ff",
-                        "primary-fixed": "#dbe1ff",
-                        "inverse-primary": "#b4c5ff",
-                        "tertiary-container": "#6b6d6e",
-                        "on-background": "#0b1c30",
-                        "surface-variant": "#d3e4fe",
-                        "surface-container": "#e5eeff",
-                        "on-primary-fixed": "#00174b",
-                        "surface-tint": "#0053db",
-                        "on-tertiary-container": "#eff0f1",
-                        "tertiary-fixed": "#e1e3e4",
-                        "on-secondary-fixed": "#002109",
-                        "secondary-fixed-dim": "#3de273",
-                        "on-error-container": "#93000a",
-                        "whatsapp": "#25D366"
+                        "primary": "#D4AF37",
+                        "on-primary": "#FFFFFF",
+                        "primary-container": "#F9F3E0",
+                        "on-primary-container": "#000000",
+                        "secondary": "#000000",
+                        "on-secondary": "#FFFFFF",
+                        "background": "#FFFFFF",
+                        "on-background": "#000000",
+                        "surface": "#FFFFFF",
+                        "on-surface": "#000000",
+                        "surface-variant": "#FFFFFF",
+                        "on-surface-variant": "#000000",
+                        "outline": "#D4AF37",
+                        "outline-variant": "#EAEAEA",
+                        "whatsapp": "#25D366",
+                        "surface-container-lowest": "#FFFFFF",
+                        "surface-container-low": "#FFFFFF",
+                        "surface-container": "#FFFFFF",
+                        "surface-container-high": "#FFFFFF",
+                        "surface-container-highest": "#FFFFFF",
+                        "secondary-fixed": "#D4AF37",
+                        "primary-fixed": "#D4AF37",
+                        "primary-fixed-dim": "#C5A059",
+                        "on-tertiary-container": "#000000"
                     },
                     "borderRadius": {
                         "DEFAULT": "0.25rem",
@@ -81,11 +57,13 @@
                         "xs": "8px"
                     },
                     "fontFamily": {
-                        "display-lg": ["Montserrat", "sans-serif"],
+                        "display-lg": ["Playfair Display", "serif"],
                         "body-md": ["Montserrat", "sans-serif"],
-                        "headline-sm": ["Montserrat", "sans-serif"],
-                        "headline-md": ["Montserrat", "sans-serif"],
-                        "label-md": ["Montserrat", "sans-serif"]
+                        "body-lg": ["Montserrat", "sans-serif"],
+                        "headline-sm": ["Playfair Display", "serif"],
+                        "headline-md": ["Playfair Display", "serif"],
+                        "label-md": ["Montserrat", "sans-serif"],
+                        "label-sm": ["Montserrat", "sans-serif"]
                     }
                 }
             }
@@ -124,9 +102,9 @@
 </head>
 <body class="bg-background text-on-surface font-body-md selection:bg-primary-fixed-dim">
 <!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-container/80 backdrop-blur-lg shadow-sm border-b border-white/40 dark:border-outline-variant/20">
+<nav class="fixed top-0 w-full z-50 bg-background/90 backdrop-blur-lg shadow-sm border-b border-outline-variant/50">
 <div class="flex justify-between items-center px-gutter py-4 max-w-container-max mx-auto">
-<a class="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed" href="#">SmileCare Dental Hospital</a>
+<a class="font-headline-sm text-headline-sm font-bold text-primary" href="#">Luxe Royal Salon</a>
 <div class="hidden md:flex items-center gap-8">
 <a class="font-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary transition-all duration-300" href="#services">Services</a>
 <a class="font-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary transition-all duration-300" href="#why-us">Why Us</a>
@@ -141,34 +119,34 @@
 </div>
 </nav>
 <!-- Hero Section -->
-<section class="relative pt-32 pb-20 overflow-hidden min-h-[90vh] flex items-center">
+<section class="relative pt-32 pb-20 overflow-hidden min-h-[90vh] flex items-center bg-background">
 <div class="absolute -top-24 -right-24 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
-<div class="absolute -bottom-24 -left-24 w-96 h-96 bg-secondary/10 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-24 -left-24 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
 <div class="max-w-container-max mx-auto px-gutter grid lg:grid-cols-2 gap-12 items-center relative z-10">
 <div class="reveal">
-<span class="inline-block px-4 py-1.5 bg-primary/5 text-primary border border-primary/10 rounded-full font-label-sm text-label-sm mb-6 uppercase tracking-wider">Welcome to Excellence</span>
-<h1 class="font-display-lg text-display-lg text-on-surface leading-tight mb-6">Your Healthy Smile <br/><span class="text-primary">Starts Here</span></h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-lg">Professional dental care with experienced dentists using modern technology. Experience anxiety-free treatments in our premium clinic.</p>
+<span class="inline-block px-4 py-1.5 bg-primary/10 text-primary border border-primary/20 rounded-full font-label-sm text-label-sm mb-6 uppercase tracking-wider">Experience True Luxury</span>
+<h1 class="font-display-lg text-display-lg text-on-surface leading-tight mb-6">Elevate Your Style <br/><span class="text-primary italic">At Luxe Royal</span></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-lg">Premium hair, beauty, and spa services with expert stylists in a lavish environment.</p>
 <div class="flex flex-wrap gap-4">
-<a class="bg-primary text-on-primary px-8 py-4 rounded-2xl font-label-md text-label-md flex items-center gap-2 shadow-lg shadow-primary/20 hover:bg-primary-container transition-all hover:scale-[1.02]" href="#booking">
+<a class="bg-primary text-on-primary px-8 py-4 font-label-md text-label-md flex items-center gap-2 border border-primary shadow-lg shadow-primary/20 hover:bg-white hover:text-on-surface transition-all uppercase tracking-widest text-xs" href="#booking">
 <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
                         Book Appointment
                     </a>
-<a class="bg-whatsapp text-white px-8 py-4 rounded-2xl font-label-md text-label-md flex items-center gap-2 shadow-lg shadow-whatsapp/20 hover:brightness-110 transition-all hover:scale-[1.02]" href="https://wa.me/919995544316" target="_blank">
+<a class="bg-black text-white px-8 py-4 font-label-md text-label-md flex items-center gap-2 border border-black shadow-lg hover:bg-white hover:text-black transition-all uppercase tracking-widest text-xs" href="https://wa.me/919995544316" target="_blank">
 <span class="material-symbols-outlined">chat</span>
-                        WhatsApp Consultation
+                        VIP Consultation
                     </a>
 </div>
 <div class="mt-12 flex items-center gap-4">
 <div class="flex -space-x-3">
 <div class="w-12 h-12 rounded-full border-2 border-surface bg-slate-200 overflow-hidden">
-<img class="w-full h-full object-cover" data-alt="A portrait of a smiling female patient after a dental checkup, soft lighting, modern background, high-end photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCa8-1pHlGcsL7ZB997VKdSPjxKEs1BzGwiSsUIF4tPi2ZsPkwfWLCYBQDTA3cUY8K8niH87FD-4db3jT8kzuyjzS6d3ytvTILUGN0HFhtRVgj3qhA0VA2lfsk6HL_zDGyuvzX2cLRt37CXUE-KFNYXSlrb5gNc4z_Rm9dlPo3MqvPeSWM0RjruJSfW6xr7dNy493_Ij1h9LKmcgZp0Vj8fJunYPtkaqbQon808jwblQAmPJ-buBMIHKg"/>
+<img class="w-full h-full object-cover" data-alt="Model" src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=200&auto=format&fit=crop"/>
 </div>
 <div class="w-12 h-12 rounded-full border-2 border-surface bg-slate-200 overflow-hidden">
-<img class="w-full h-full object-cover" data-alt="A portrait of a cheerful young man with a bright white smile, outdoor lighting, healthcare lifestyle photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzzxHAoLWkxpcEUkWWnw3dV4kXQjVOrVD8M6slgZGs73wGTKVovsaMS6TJiRCiDg4oI5bLsHAGcegMRVgeAyKefRG1Ey4I19Th3hm2Uc9t22aGbl2_iHnsUxaUTbQXjJsUOnHWpNP1DJ6WVyjC3FQPPmjReMABx2DAtHwo9WEAF8FbNOQrqRjtyecqCdsHWtysvOEcfw4BX4toSWdpdLrVQgk3R23vZHJEZWJoj_aXPhWGOGYJmdykXQ"/>
+<img class="w-full h-full object-cover" data-alt="Model" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop"/>
 </div>
 <div class="w-12 h-12 rounded-full border-2 border-surface bg-slate-200 overflow-hidden">
-<img class="w-full h-full object-cover" data-alt="A professional dental surgeon in clinical scrubs smiling warmly at the camera, clean dental clinic setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEFzX__bZ1-UUUGX32OT36DN4OPgirjaBL0HigGGuthd9UVCX7O_GNyvTbfV1BLdrNTp2QMq1oiTEn8DPGAUVUkVVcfHTQkYeTZ6TIRLot90wcbYIks2imTU8_vnMtw4NQKUkyxQ-LKkJTCWK80Aw2Yl1grUcgqleR3dNeVoFSCXWPNzGOqGuItrVh_GDiiUluH8dZ9loBwcLQgzly1f_Bc-8VxqSnel9LhAyG0w8tlav300bIUaTScw"/>
+<img class="w-full h-full object-cover" data-alt="Model" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop"/>
 </div>
 </div>
 <div>
@@ -179,9 +157,9 @@
 </div>
 <div class="grid grid-cols-2 gap-4 reveal" style="transition-delay: 200ms;">
 <div class="space-y-4 pt-12">
-<img alt="SmileCare Dental Hospital Clinic Interior" class="w-full h-80 object-cover rounded-2xl shadow-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCK3H7-uAHlsC0uJLpm2eVZ4a4a7HhU15RN3qF1ogKOwI_yLTQQCK2Dt0TIMGMUTcWAaS1xD8wO11znpV1La0GNahA_VQT7ihXzxnm7s-ToUHQIP9SApqKMawVkULG6X08oqlTZ4GBshlDxDOHMzuaQ0LBF5ohAeoE1WmXGHvtOHlQ-4-GM09SUa8q1uEHFlTJNFxp8h4sNTSwOP2_SD5AzcwJrOo64fVYqFCr3w807KPWuAFguXE5o-w"/>
-<div class="bg-primary text-on-primary p-6 rounded-2xl shadow-lg border border-primary/20 flex flex-col items-center justify-center text-center">
-<div class="flex items-center gap-1 mb-2 text-[#FBBF24]">
+<img alt="Luxury Salon Interior" class="w-full h-80 object-cover border border-outline-variant/30 shadow-xl" src="https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&w=600&auto=format&fit=crop"/>
+<div class="bg-black text-white p-6 shadow-lg border border-primary/20 flex flex-col items-center justify-center text-center">
+<div class="flex items-center gap-1 mb-2 text-primary">
 <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
@@ -189,11 +167,11 @@
 <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
 </div>
 <p class="font-headline-sm text-headline-sm font-bold">4.9/5 Rating</p>
-<p class="text-label-sm opacity-90 uppercase tracking-tighter flex items-center justify-center gap-1 mt-1"><span class="material-symbols-outlined text-[14px]">verified</span> Verified by Google</p>
+<p class="text-label-sm opacity-90 uppercase tracking-widest flex items-center justify-center gap-1 mt-1 text-xs"><span class="material-symbols-outlined text-[14px]">workspace_premium</span> Verified VIPs</p>
 </div>
 </div>
 <div class="space-y-4">
-<img alt="Smiling Patient" class="w-full h-[32rem] object-cover rounded-2xl shadow-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATy5u_ftLGqgW87-_2a64OwegZogyJDm2teOAmbFN6tP-xY-43j4_JRsqRFiPj5B6aHiBnFJR9w9JXREaNrMYd82tyVwsPkEiDfmEurc214YqAB9XlFYynyxl4W4WQPORsFwFtUUWwr7l255u-0lS8tDVscpzZgUNbSA8Ecgpdp_KwynifjpttuReiYPJEGMgfxRGzNkHyGswxJRjuKNRYJ0v93TLKwIMov1wkl6q_NIfDM-LPJUIzgA"/>
+<img alt="Fashion Model Hair Styling" class="w-full h-[32rem] object-cover border border-outline-variant/30 shadow-xl" src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?q=80&w=600&auto=format&fit=crop"/>
 </div>
 </div>
 </div>
@@ -201,11 +179,11 @@
 <!-- Trust & Accreditations Banner -->
 <section class="py-8 bg-surface border-y border-outline-variant/20">
 <div class="max-w-container-max mx-auto px-gutter">
-<div class="flex flex-wrap justify-center gap-8 md:gap-16 items-center opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
-<div class="flex items-center gap-2"><span class="material-symbols-outlined text-3xl">verified_user</span><span class="font-bold font-label-md">ISO 9001:2015 Certified</span></div>
-<div class="flex items-center gap-2"><span class="material-symbols-outlined text-3xl">health_and_safety</span><span class="font-bold font-label-md">NABH Accredited</span></div>
-<div class="flex items-center gap-2"><span class="material-symbols-outlined text-3xl">workspace_premium</span><span class="font-bold font-label-md">IDA Member</span></div>
-<div class="flex items-center gap-2"><span class="material-symbols-outlined text-3xl">sanitizer</span><span class="font-bold font-label-md">100% Sterilization Guarantee</span></div>
+<div class="flex flex-wrap justify-center gap-8 md:gap-16 items-center opacity-70 hover:opacity-100 transition-opacity duration-500">
+<div class="flex items-center gap-2"><span class="material-symbols-outlined text-3xl text-primary">auto_awesome</span><span class="font-bold font-label-md tracking-widest uppercase text-xs">Vogue Recognized</span></div>
+<div class="flex items-center gap-2"><span class="material-symbols-outlined text-3xl text-primary">workspace_premium</span><span class="font-bold font-label-md tracking-widest uppercase text-xs">L'Oréal Pro Partner</span></div>
+<div class="flex items-center gap-2"><span class="material-symbols-outlined text-3xl text-primary">stars</span><span class="font-bold font-label-md tracking-widest uppercase text-xs">Olaplex Certified</span></div>
+<div class="flex items-center gap-2"><span class="material-symbols-outlined text-3xl text-primary">diamond</span><span class="font-bold font-label-md tracking-widest uppercase text-xs">Premium Products Only</span></div>
 </div>
 </div>
 </section>
@@ -214,115 +192,116 @@
 <div class="max-w-container-max mx-auto px-gutter">
 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
 <!-- Experienced Dentists -->
-<div class="bg-surface p-8 rounded-2xl border border-outline-variant/30 reveal group hover:shadow-xl transition-all duration-500">
-<div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-3xl">medical_services</span>
+<div class="bg-surface p-8 border border-outline-variant/30 reveal group hover:shadow-xl transition-all duration-500">
+<div class="w-14 h-14 bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">cut</span>
 </div>
-<h3 class="font-headline-sm text-headline-sm mb-3">Experienced Dentists</h3>
-<p class="text-on-surface-variant font-body-md">Leading specialists with over 15 years of clinical expertise.</p>
+<h3 class="font-headline-sm text-headline-sm mb-3">Master Stylists</h3>
+<p class="text-on-surface font-body-md">Award-winning hair experts defining the latest fashion trends.</p>
 </div>
 <!-- Modern Equipment -->
-<div class="bg-surface p-8 rounded-2xl border border-outline-variant/30 reveal group hover:shadow-xl transition-all duration-500" style="transition-delay: 100ms;">
-<div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-3xl">biotech</span>
+<div class="bg-surface p-8 border border-outline-variant/30 reveal group hover:shadow-xl transition-all duration-500" style="transition-delay: 100ms;">
+<div class="w-14 h-14 bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">spa</span>
 </div>
-<h3 class="font-headline-sm text-headline-sm mb-3">Modern Equipment</h3>
-<p class="text-on-surface-variant font-body-md">Utilizing latest 3D imaging and laser dental technology.</p>
+<h3 class="font-headline-sm text-headline-sm mb-3">Tranquil Spa</h3>
+<p class="text-on-surface font-body-md">Experience ultimate relaxation with our holistic therapies.</p>
 </div>
 <!-- Pain-Free -->
-<div class="bg-surface p-8 rounded-2xl border border-outline-variant/30 reveal group hover:shadow-xl transition-all duration-500" style="transition-delay: 200ms;">
-<div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-3xl">sentiment_satisfied</span>
+<div class="bg-surface p-8 border border-outline-variant/30 reveal group hover:shadow-xl transition-all duration-500" style="transition-delay: 200ms;">
+<div class="w-14 h-14 bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">brush</span>
 </div>
-<h3 class="font-headline-sm text-headline-sm mb-3">Pain-Free Care</h3>
-<p class="text-on-surface-variant font-body-md">Gentle techniques designed for absolute patient comfort.</p>
+<h3 class="font-headline-sm text-headline-sm mb-3">Bridal Mastery</h3>
+<p class="text-on-surface font-body-md">Flawless makeup and styling for your most important day.</p>
 </div>
 <!-- Sterile Environment -->
-<div class="bg-surface p-8 rounded-2xl border border-outline-variant/30 reveal group hover:shadow-xl transition-all duration-500" style="transition-delay: 300ms;">
-<div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-3xl">sanitizer</span>
+<div class="bg-surface p-8 border border-outline-variant/30 reveal group hover:shadow-xl transition-all duration-500" style="transition-delay: 300ms;">
+<div class="w-14 h-14 bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">clean_hands</span>
 </div>
-<h3 class="font-headline-sm text-headline-sm mb-3">Sterile Environment</h3>
-<p class="text-on-surface-variant font-body-md">Strict adherence to international hygiene standards.</p>
+<h3 class="font-headline-sm text-headline-sm mb-3">Impeccable Hygiene</h3>
+<p class="text-on-surface font-body-md">Strict adherence to premium sterilization protocols.</p>
 </div>
 </div>
 </div>
 </section>
 <!-- Services Grid -->
-<section class="py-xl" id="services">
+<section class="py-xl bg-background" id="services">
 <div class="max-w-container-max mx-auto px-gutter">
 <div class="text-center mb-16 reveal">
 <span class="text-primary font-label-md uppercase tracking-widest mb-4 block">Our Specialties</span>
-<h2 class="font-headline-md text-headline-md mb-6">Comprehensive Dental Services</h2>
+<h2 class="font-headline-md text-headline-md mb-6 text-on-surface">Premium Salon Services</h2>
 <div class="w-20 h-1 bg-primary mx-auto rounded-full"></div>
 </div>
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 <!-- Service Cards -->
-<div class="service-card reveal p-8 rounded-2xl bg-surface-bright border border-outline-variant/20 hover:border-primary/30 transition-all hover:bg-white hover:shadow-2xl hover:-translate-y-2 group cursor-pointer">
-<span class="material-symbols-outlined text-4xl text-primary mb-6 block group-hover:rotate-12 transition-transform">health_and_safety</span>
-<h4 class="font-headline-sm text-headline-sm mb-2">Checkup</h4>
-<p class="text-on-surface-variant text-label-md">Comprehensive oral examinations and X-rays.</p>
+<div class="service-card reveal p-8 border border-outline-variant/50 hover:border-primary transition-all hover:bg-white hover:shadow-xl hover:-translate-y-2 group cursor-pointer bg-white">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 block group-hover:scale-110 transition-transform">content_cut</span>
+<h4 class="font-headline-sm text-headline-sm mb-2">Signature Styling</h4>
+<p class="text-on-surface text-label-md">Bespoke haircuts and blowouts tailored to your face shape.</p>
 </div>
-<div class="service-card reveal p-8 rounded-2xl bg-surface-bright border border-outline-variant/20 hover:border-primary/30 transition-all hover:bg-white hover:shadow-2xl hover:-translate-y-2 group cursor-pointer" style="transition-delay: 50ms;">
-<span class="material-symbols-outlined text-4xl text-primary mb-6 block group-hover:rotate-12 transition-transform">cleaning_services</span>
-<h4 class="font-headline-sm text-headline-sm mb-2">Cleaning</h4>
-<p class="text-on-surface-variant text-label-md">Professional scaling and polishing for a fresh smile.</p>
+<div class="service-card reveal p-8 border border-outline-variant/50 hover:border-primary transition-all hover:bg-white hover:shadow-xl hover:-translate-y-2 group cursor-pointer bg-white" style="transition-delay: 50ms;">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 block group-hover:scale-110 transition-transform">format_paint</span>
+<h4 class="font-headline-sm text-headline-sm mb-2">Color Alchemy</h4>
+<p class="text-on-surface text-label-md">Balayage, highlights, and vivid color transformations.</p>
 </div>
-<div class="service-card reveal p-8 rounded-2xl bg-surface-bright border border-outline-variant/20 hover:border-primary/30 transition-all hover:bg-white hover:shadow-2xl hover:-translate-y-2 group cursor-pointer" style="transition-delay: 100ms;">
-<span class="material-symbols-outlined text-4xl text-primary mb-6 block group-hover:rotate-12 transition-transform">auto_awesome</span>
-<h4 class="font-headline-sm text-headline-sm mb-2">Whitening</h4>
-<p class="text-on-surface-variant text-label-md">Advanced bleaching systems for instant brightness.</p>
+<div class="service-card reveal p-8 border border-outline-variant/50 hover:border-primary transition-all hover:bg-white hover:shadow-xl hover:-translate-y-2 group cursor-pointer bg-white" style="transition-delay: 100ms;">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 block group-hover:scale-110 transition-transform">face_retouching_natural</span>
+<h4 class="font-headline-sm text-headline-sm mb-2">Skin Therapy</h4>
+<p class="text-on-surface text-label-md">Rejuvenating facials and advanced skin care routines.</p>
 </div>
-<div class="service-card reveal p-8 rounded-2xl bg-surface-bright border border-outline-variant/20 hover:border-primary/30 transition-all hover:bg-white hover:shadow-2xl hover:-translate-y-2 group cursor-pointer" style="transition-delay: 150ms;">
-<span class="material-symbols-outlined text-4xl text-primary mb-6 block group-hover:rotate-12 transition-transform">account_tree</span>
-<h4 class="font-headline-sm text-headline-sm mb-2">Root Canal</h4>
-<p class="text-on-surface-variant text-label-md">Modern endodontic therapy to save natural teeth.</p>
+<div class="service-card reveal p-8 border border-outline-variant/50 hover:border-primary transition-all hover:bg-white hover:shadow-xl hover:-translate-y-2 group cursor-pointer bg-white" style="transition-delay: 150ms;">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 block group-hover:scale-110 transition-transform">water_drop</span>
+<h4 class="font-headline-sm text-headline-sm mb-2">Keratin Spa</h4>
+<p class="text-on-surface text-label-md">Intensive protein treatments for silky smooth hair.</p>
 </div>
-<div class="service-card reveal p-8 rounded-2xl bg-surface-bright border border-outline-variant/20 hover:border-primary/30 transition-all hover:bg-white hover:shadow-2xl hover:-translate-y-2 group cursor-pointer" style="transition-delay: 200ms;">
-<span class="material-symbols-outlined text-4xl text-primary mb-6 block group-hover:rotate-12 transition-transform">architecture</span>
-<h4 class="font-headline-sm text-headline-sm mb-2">Implants</h4>
-<p class="text-on-surface-variant text-label-md">Permanent, aesthetic solutions for missing teeth.</p>
+<div class="service-card reveal p-8 border border-outline-variant/50 hover:border-primary transition-all hover:bg-white hover:shadow-xl hover:-translate-y-2 group cursor-pointer bg-white" style="transition-delay: 200ms;">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 block group-hover:scale-110 transition-transform">pan_tool</span>
+<h4 class="font-headline-sm text-headline-sm mb-2">Nail Artistry</h4>
+<p class="text-on-surface text-label-md">Gel manicures, acrylics, and detailed nail designs.</p>
 </div>
-<div class="service-card reveal p-8 rounded-2xl bg-surface-bright border border-outline-variant/20 hover:border-primary/30 transition-all hover:bg-white hover:shadow-2xl hover:-translate-y-2 group cursor-pointer" style="transition-delay: 250ms;">
-<span class="material-symbols-outlined text-4xl text-primary mb-6 block group-hover:rotate-12 transition-transform">grid_view</span>
-<h4 class="font-headline-sm text-headline-sm mb-2">Braces</h4>
-<p class="text-on-surface-variant text-label-md">Invisalign and traditional orthodontic solutions.</p>
+<div class="service-card reveal p-8 border border-outline-variant/50 hover:border-primary transition-all hover:bg-white hover:shadow-xl hover:-translate-y-2 group cursor-pointer bg-white" style="transition-delay: 250ms;">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 block group-hover:scale-110 transition-transform">favorite</span>
+<h4 class="font-headline-sm text-headline-sm mb-2">Bridal Package</h4>
+<p class="text-on-surface text-label-md">Comprehensive pre-wedding grooming and day-of makeup.</p>
 </div>
-<div class="service-card reveal p-8 rounded-2xl bg-surface-bright border border-outline-variant/20 hover:border-primary/30 transition-all hover:bg-white hover:shadow-2xl hover:-translate-y-2 group cursor-pointer" style="transition-delay: 300ms;">
-<span class="material-symbols-outlined text-4xl text-primary mb-6 block group-hover:rotate-12 transition-transform">close</span>
-<h4 class="font-headline-sm text-headline-sm mb-2">Extraction</h4>
-<p class="text-on-surface-variant text-label-md">Gentle removal of problematic or wisdom teeth.</p>
+<div class="service-card reveal p-8 border border-outline-variant/50 hover:border-primary transition-all hover:bg-white hover:shadow-xl hover:-translate-y-2 group cursor-pointer bg-white" style="transition-delay: 300ms;">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 block group-hover:scale-110 transition-transform">self_improvement</span>
+<h4 class="font-headline-sm text-headline-sm mb-2">Body Massage</h4>
+<p class="text-on-surface text-label-md">Swedish, Deep Tissue, and Aromatherapy massages.</p>
 </div>
-<div class="service-card reveal p-8 rounded-2xl bg-surface-bright border border-outline-variant/20 hover:border-primary/30 transition-all hover:bg-white hover:shadow-2xl hover:-translate-y-2 group cursor-pointer" style="transition-delay: 350ms;">
-<span class="material-symbols-outlined text-4xl text-primary mb-6 block group-hover:rotate-12 transition-transform">face</span>
-<h4 class="font-headline-sm text-headline-sm mb-2">Cosmetic</h4>
-<p class="text-on-surface-variant text-label-md">Veneers and smile makeovers for perfect aesthetics.</p>
+<div class="service-card reveal p-8 border border-outline-variant/50 hover:border-primary transition-all hover:bg-white hover:shadow-xl hover:-translate-y-2 group cursor-pointer bg-white" style="transition-delay: 350ms;">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 block group-hover:scale-110 transition-transform">flare</span>
+<h4 class="font-headline-sm text-headline-sm mb-2">Laser Care</h4>
+<p class="text-on-surface text-label-md">Painless and permanent hair reduction technology.</p>
+</div>
 </div>
 </div>
 </div>
 </section>
 <!-- Why Choose Us: Stats Section -->
-<section class="py-xl bg-on-surface text-surface overflow-hidden relative" id="why-us">
+<section class="py-xl bg-white text-on-surface border-y border-outline-variant/30 overflow-hidden relative" id="why-us">
 <div class="absolute inset-0 opacity-10 pointer-events-none">
 <div class="absolute top-0 right-0 w-full h-full bg-[radial-gradient(circle_at_70%_30%,#2563eb,transparent_50%)]"></div>
 </div>
 <div class="max-w-container-max mx-auto px-gutter relative z-10">
 <div class="grid lg:grid-cols-2 gap-16 items-center">
 <div class="reveal">
-<h2 class="font-headline-md text-headline-md mb-8">Why SmileCare Dental Hospital stands out</h2>
-<p class="font-body-lg text-body-lg text-outline-variant mb-12">We combine clinical excellence with a patient-first philosophy to redefine your dental experience. Our clinic isn't just about treatments; it's about lasting oral health and confidence.</p>
+<h2 class="font-headline-md text-headline-md mb-8">Why Luxe Royal Salon stands out</h2>
+<p class="font-body-lg text-body-lg text-on-surface mb-12">We combine clinical excellence with a patient-first philosophy to redefine your dental experience. Our clinic isn't just about treatments; it's about lasting oral health and confidence.</p>
 <div class="grid grid-cols-3 gap-8">
 <div>
 <p class="text-5xl font-bold text-secondary-fixed mb-2">10+</p>
-<p class="text-label-md text-outline-variant uppercase">Years Experience</p>
+<p class="text-label-md text-on-surface uppercase">Years Experience</p>
 </div>
 <div>
 <p class="text-5xl font-bold text-secondary-fixed mb-2">5K+</p>
-<p class="text-label-md text-outline-variant uppercase">Happy Patients</p>
+<p class="text-label-md text-on-surface uppercase">Happy Patients</p>
 </div>
 <div>
 <p class="text-5xl font-bold text-secondary-fixed mb-2">4.9</p>
-<p class="text-label-md text-outline-variant uppercase">Rating</p>
+<p class="text-label-md text-on-surface uppercase">Rating</p>
 </div>
 </div>
 </div>
@@ -348,12 +327,12 @@
 <div class="max-w-container-max mx-auto px-gutter">
 <div class="grid lg:grid-cols-2 gap-16 items-center">
 <div class="reveal">
-<div class="relative rounded-2xl overflow-hidden group">
-<img alt="Dr. Aris Thorne" class="w-full h-[600px] object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCq3QX7K36bdidOP6IHrLjjaA_Aol3gNlDkVlhSE2bZkiCxGhopsbJ1ako_jBTLH8L12d8tMpUvyZNzpkyPkJ_6njVrfmb3gHBKrSaD67tyAGZmrOHspKAZ5aCYn_fNd8_qKnKcDNRZcQIua1bjHVIo5ghTqTrEh3iMuVw6PLpza9SCH98hgyrGBe23iMMjw3s0MoJZkiJmgmCeXJz7gmXQcNzlqSq8y0PIzJsLeCH8_eJtQu1ObzF7ww"/>
-<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 to-transparent flex items-end p-12">
+<div class="relative overflow-hidden group border border-outline-variant/30">
+<img alt="Arjun Menon, Master Stylist" class="w-full h-[600px] object-cover transition-transform duration-700 group-hover:scale-105" src="https://images.unsplash.com/photo-1595959183082-7b570b7e08e2?q=80&w=600&auto=format&fit=crop"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-12">
 <div>
-<h3 class="text-white font-headline-md text-headline-md">Dr. Arjun Menon</h3>
-<p class="text-primary-fixed font-label-md uppercase tracking-widest">BDS, MDS (Oral &amp; Maxillofacial Surgery)</p>
+<h3 class="text-white font-headline-md text-headline-md">Arjun Menon</h3>
+<p class="text-primary-fixed font-label-md uppercase tracking-widest">Master Stylist &amp; Creative Director</p>
 </div>
 </div>
 </div>
@@ -361,8 +340,7 @@
 <div class="reveal">
 <span class="text-primary font-label-md uppercase tracking-widest mb-4 block">Our Expert</span>
 <h2 class="font-headline-md text-headline-md mb-8">Guided by Clinical <br/>Mastery &amp; Compassion</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 leading-relaxed">
-                        With over 15 years of experience and 15,000+ successful surgeries, Dr. Arjun Menon leads SmileCare Dental Hospital with a vision of blending precision medical science with patient-centered comfort.
+                        With over 15 years of experience in the high-fashion industry, Arjun Menon leads Luxe Royal Salon with a vision of blending classic elegance with modern trends to give you the perfect look.
                     </p>
 <ul class="space-y-4 mb-10">
 <li class="flex items-center gap-3">
@@ -401,24 +379,24 @@
 <p class="font-label-md text-label-md mb-4 text-primary font-bold">1. Select Service</p>
 <div class="flex flex-wrap gap-3" id="serviceOptions">
 <label class="cursor-pointer">
-<input checked="" class="hidden peer" name="service" type="radio" value="Checkup"/>
-<span class="px-6 py-2.5 rounded-full border border-outline-variant bg-surface peer-checked:bg-primary peer-checked:text-on-primary peer-checked:border-primary transition-all inline-block text-label-md">Checkup</span>
+<input checked="" class="hidden peer" name="service" type="radio" value="Haircut"/>
+<span class="px-6 py-2.5 border border-outline-variant bg-white peer-checked:bg-black peer-checked:text-white peer-checked:border-black transition-all inline-block text-label-md uppercase tracking-widest text-xs">Haircut</span>
 </label>
 <label class="cursor-pointer">
-<input class="hidden peer" name="service" type="radio" value="Cleaning"/>
-<span class="px-6 py-2.5 rounded-full border border-outline-variant bg-surface peer-checked:bg-primary peer-checked:text-on-primary peer-checked:border-primary transition-all inline-block text-label-md">Cleaning</span>
+<input class="hidden peer" name="service" type="radio" value="Coloring"/>
+<span class="px-6 py-2.5 border border-outline-variant bg-white peer-checked:bg-black peer-checked:text-white peer-checked:border-black transition-all inline-block text-label-md uppercase tracking-widest text-xs">Coloring</span>
 </label>
 <label class="cursor-pointer">
-<input class="hidden peer" name="service" type="radio" value="Whitening"/>
-<span class="px-6 py-2.5 rounded-full border border-outline-variant bg-surface peer-checked:bg-primary peer-checked:text-on-primary peer-checked:border-primary transition-all inline-block text-label-md">Whitening</span>
+<input class="hidden peer" name="service" type="radio" value="Facial"/>
+<span class="px-6 py-2.5 border border-outline-variant bg-white peer-checked:bg-black peer-checked:text-white peer-checked:border-black transition-all inline-block text-label-md uppercase tracking-widest text-xs">Facial</span>
 </label>
 <label class="cursor-pointer">
-<input class="hidden peer" name="service" type="radio" value="Braces"/>
-<span class="px-6 py-2.5 rounded-full border border-outline-variant bg-surface peer-checked:bg-primary peer-checked:text-on-primary peer-checked:border-primary transition-all inline-block text-label-md">Braces</span>
+<input class="hidden peer" name="service" type="radio" value="Bridal"/>
+<span class="px-6 py-2.5 border border-outline-variant bg-white peer-checked:bg-black peer-checked:text-white peer-checked:border-black transition-all inline-block text-label-md uppercase tracking-widest text-xs">Bridal</span>
 </label>
 <label class="cursor-pointer">
 <input class="hidden peer" name="service" type="radio" value="Other"/>
-<span class="px-6 py-2.5 rounded-full border border-outline-variant bg-surface peer-checked:bg-primary peer-checked:text-on-primary peer-checked:border-primary transition-all inline-block text-label-md">Other</span>
+<span class="px-6 py-2.5 border border-outline-variant bg-white peer-checked:bg-black peer-checked:text-white peer-checked:border-black transition-all inline-block text-label-md uppercase tracking-widest text-xs">Other</span>
 </label>
 </div>
 </div>
@@ -568,7 +546,7 @@
 <section class="py-xl bg-surface-container-high">
 <div class="max-w-container-max mx-auto px-gutter grid lg:grid-cols-2 gap-12">
 <div class="reveal">
-<h2 class="font-headline-md text-headline-md mb-8">Visit Our Clinic</h2>
+<h2 class="font-headline-md text-headline-md mb-8">Visit Our Salon</h2>
 <div class="space-y-8">
 <div class="flex gap-4">
 <span class="material-symbols-outlined text-primary">location_on</span>
@@ -605,7 +583,7 @@
 <div class="w-full h-full bg-slate-100 flex items-center justify-center relative">
 <iframe src="https://maps.google.com/maps?q=Chelakkara,+Kerala&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 <div class="absolute bottom-6 left-6 bg-white/90 backdrop-blur p-4 rounded-xl shadow-lg border border-white/20 pointer-events-none">
-<p class="text-primary font-bold">SmileCare Dental Hospital Clinic</p>
+<p class="text-primary font-bold">Luxe Royal Salon</p>
 <p class="text-xs text-on-surface-variant">Chelakkara, Kerala</p>
 </div>
 </div>
@@ -613,18 +591,18 @@
 </div>
 </section>
 <!-- Footer -->
-<footer class="bg-on-surface dark:bg-surface-container-lowest py-lg">
+<footer class="bg-white border-t border-outline-variant/30 text-on-surface py-lg">
 <div class="max-w-container-max mx-auto px-gutter">
 <div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
-<p class="font-headline-md text-headline-md text-surface dark:text-on-surface">SmileCare Dental Hospital</p>
+<p class="font-headline-md text-headline-md text-on-surface">Luxe Royal Salon</p>
 <div class="flex flex-wrap justify-center gap-8">
-<a class="text-outline-variant hover:text-surface transition-colors font-body-md text-body-md" href="#">Privacy Policy</a>
-<a class="text-outline-variant hover:text-surface transition-colors font-body-md text-body-md" href="#">Terms of Service</a>
-<a class="text-outline-variant hover:text-surface transition-colors font-body-md text-body-md" href="#">Patient Portal</a>
-<a class="text-outline-variant hover:text-surface transition-colors font-body-md text-body-md" href="#">Careers</a>
+<a class="text-on-surface hover:text-primary transition-colors font-body-md text-body-md" href="#">Privacy Policy</a>
+<a class="text-on-surface hover:text-primary transition-colors font-body-md text-body-md" href="#">Terms of Service</a>
+<a class="text-on-surface hover:text-primary transition-colors font-body-md text-body-md" href="#">Patient Portal</a>
+<a class="text-on-surface hover:text-primary transition-colors font-body-md text-body-md" href="#">Careers</a>
 </div>
 </div>
-<div class="border-t border-outline-variant/10 pt-8 flex flex-col md:flex-row justify-between items-center text-outline-variant font-label-md text-label-md">
+<div class="border-t border-outline-variant/10 pt-8 flex flex-col md:flex-row justify-between items-center text-on-surface font-label-md text-label-md">
 <p>© 2024 SmileCare Dental Hospital Clinic. Excellence in Modern Dentistry.</p>
 <div class="flex gap-4 mt-4 md:mt-0">
 <a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/10 transition-all" href="#">
@@ -640,7 +618,7 @@
 <!-- Floating UI -->
 <a class="fixed bottom-8 right-8 z-[100] w-16 h-16 bg-whatsapp text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform active:scale-95 group" href="https://wa.me/919995544316" target="_blank">
 <span class="material-symbols-outlined text-3xl">chat</span>
-<span class="absolute right-20 bg-on-surface text-surface px-4 py-2 rounded-xl text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">Chat with us</span>
+<span class="absolute right-20 bg-white border border-outline-variant/50 text-on-surface px-4 py-2 rounded-xl text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-md">Chat with us</span>
 </a>
 <button class="fixed bottom-8 left-8 z-[100] w-12 h-12 bg-white text-on-surface border border-outline-variant/20 rounded-full hidden flex items-center justify-center shadow-lg hover:-translate-y-1 transition-all" id="backToTop">
 <span class="material-symbols-outlined">arrow_upward</span>
